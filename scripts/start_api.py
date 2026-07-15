@@ -3,7 +3,15 @@
 from __future__ import annotations
 
 import os
+import sys
 from pathlib import Path
+
+# Make the project root importable even when launched as `python scripts/start_api.py`
+# (Render's default start command), where sys.path[0] is the scripts/ dir — not the
+# project root — so bare `import insightiq` / `import scripts.*` would fail.
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 import uvicorn
 
@@ -11,7 +19,6 @@ from insightiq.pipeline import run_pipeline
 from scripts.generate_synthetic_datasets import main as generate_synthetic
 
 
-ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
 
 
