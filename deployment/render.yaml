@@ -1,11 +1,23 @@
 services:
   - type: web
     name: insightiq
-    env: python
+    runtime: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python scripts/start_api.py
+    healthCheckPath: /health
     envVars:
+      # Rebuilds artifacts on boot so the API serves fresh data.
       - key: INSIGHTIQ_REBUILD_ON_START
-        value: true
+        value: "true"
+      # Deploys fully offline (deterministic fallbacks) — no token required.
+      # To enable real LLM + HF embeddings/sentiment: add HF_TOKEN in the Render
+      # dashboard and flip these two flags to "true".
+      - key: INSIGHTIQ_USE_HF_EMBEDDINGS
+        value: "false"
+      - key: INSIGHTIQ_USE_HF_SENTIMENT
+        value: "false"
       - key: HF_LLM_MODEL
-        value: mistralai/Mistral-7B-Instruct-v0.3
+        value: meta-llama/Llama-3.1-8B-Instruct
+      - key: HF_TOKEN
+        sync: false

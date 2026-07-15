@@ -15,6 +15,16 @@ It is deliberately **not** chatbot-first or dashboard-first. The headline artifa
 
 ---
 
+## 🌐 Try it live
+
+Deploy your own instance in ~2 minutes (free tier, no token needed — runs on deterministic fallbacks):
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/rakesh3834/insightiq)
+
+Once up, the API is at `https://<your-app>.onrender.com` — open **`/docs`** for interactive Swagger where you can test every endpoint, including `POST /model/predict` (score an order's cancellation risk) and `GET /model/evaluation` (the full model report). See [Deployment](#-deployment) below for the frontend.
+
+---
+
 ## 🎯 Headline results — cancellation-risk model
 
 A supervised pipeline that scores each order's cancellation probability so ops can intervene *before* revenue is lost. The full data-scientist loop — **model → validate → calibrate → choose an operating point → quantify impact.**
@@ -164,6 +174,16 @@ tests/           pytest suites (data contracts + ML)
 - [Architecture](docs/architecture.md) · [Product requirements](docs/product_requirements.md) · [Decision-intelligence design](docs/decision_intelligence_architecture.md)
 
 ---
+
+## 🚢 Deployment
+
+| Service | Host | Notes |
+|---|---|---|
+| **Backend API** | Render (`deployment/render.yaml`) | One-click button above. Binds `$PORT`, `/health` check, rebuilds artifacts on boot. Runs tokenless by default. |
+| **Frontend** | Vercel | Import `frontend/`, set `NEXT_PUBLIC_API_URL` to your Render API URL. |
+| **Container** | Docker | `docker compose up --build` → API on `:8000`. |
+
+To enable the real LLM + HF embeddings/sentiment on a deployment, add `HF_TOKEN` and set `INSIGHTIQ_USE_HF_EMBEDDINGS` / `INSIGHTIQ_USE_HF_SENTIMENT` to `true`. If you deploy the frontend on a different origin than the API, enable CORS for that origin on the backend.
 
 ## 🛠️ Tech stack
 
