@@ -1,121 +1,174 @@
-# InsightIQ
+# InsightIQ — Decision Intelligence Platform
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://insightiq.streamlit.app)
+> Predictive modeling · experimentation · product analytics — turned into **calibrated, dollar-quantified product decisions.**
 
-InsightIQ is an AI Decision Intelligence Platform for product, data, and engineering teams. It turns ecommerce behavior, orders, reviews, release notes, experiments, incidents, and product documentation into evidence-grounded product decisions.
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-Dashboard-000000?logo=nextdotjs&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-Agents-1C3C3C)
+![Tests](https://img.shields.io/badge/tests-13%20passing-brightgreen)
 
-It is intentionally not a chatbot-first project and not a dashboard-first project. The main artifact is a decision workflow that answers business questions with metrics, customer voice, experiment evidence, release context, root-cause hypotheses, recommendations, and evaluation.
+InsightIQ takes raw e-commerce data (users, orders, events, reviews) and answers the question every product team faces: *a metric moved — do we **launch, iterate, roll back, or investigate?*** It does this with a real data-science spine — a calibrated cancellation-risk model, A/B experiment readouts, forecasting, and anomaly detection — wrapped in a LangGraph decision layer, served through a FastAPI backend and a Next.js dashboard.
 
-## GitHub First Run
+It is deliberately **not** chatbot-first or dashboard-first. The headline artifact is a **decision** backed by evidence, a recommendation, and a dollar figure.
 
-Clone the project, create a Hugging Face token, and configure the environment:
+---
 
+## 🎯 Headline results — cancellation-risk model
+
+A supervised pipeline that scores each order's cancellation probability so ops can intervene *before* revenue is lost. The full data-scientist loop — **model → validate → calibrate → choose an operating point → quantify impact.**
+
+**Model selection by 5-fold cross-validated ROC-AUC** (robust to split luck):
+
+| Model | CV ROC-AUC |
+|---|---|
+| **Logistic Regression** ✅ *(selected)* | **0.741 ± 0.013** |
+| Random Forest | 0.736 |
+| HistGradientBoosting | 0.735 |
+| XGBoost | 0.719 |
+| K-Nearest Neighbors | 0.710 |
+
+| What | Result | Why it matters |
+|---|---|---|
+| **Probability calibration** (isotonic) | Brier **0.204 → 0.162** (−21%) | Predicted probabilities can be read as true cancellation rates |
+| **Operating threshold** (max-F1, not naive 0.5) | **0.25** → recall **0.65**, precision **0.42** | Positive class is only 26% — the threshold is tuned to the imbalance |
+| **Feature selection** (5 methods + consensus vote) | 5-feature subset ≈ full-set AUC (**0.748 vs 0.749**) | Half the features, same performance; MI filter alone underperforms (0.689) |
+| **Business impact** | **~$177K recovered GMV** per 5K-order window vs **$274K** leaked if no action | The threshold is a lever: recovered revenue ⇄ review cost |
+
+> **On the data:** the public `order_status` is randomly assigned (no learnable signal), so the cancellation label is a *documented synthetic risk process* built from genuine drivers (order value, tenure, engagement, late-night impulse) plus irreducible noise — the model's permutation importances recover those exact drivers. **The label is synthetic; the methodology is production-shaped.** See [`docs/interview_qa.md`](docs/interview_qa.md).
+
+---
+
+## 🖼️ Screenshots
+
+> Add PNGs to `docs/screenshots/` with these names and they'll render here.
+
+| Risk Model | Calibration & Threshold | Decision Dashboard |
+|---|---|---|
+| ![Risk model](docs/screenshots/risk-model.png) | ![Calibration](docs/screenshots/calibration.png) | ![Dashboard](docs/screenshots/dashboard.png) |
+
+---
+
+## 🏗️ Architecture
+
+```
+                 ecommerce_dataset/ (users, orders, events, reviews, order_items, products)
+                                    │
+                        ┌───────────▼───────────┐
+                        │   run_pipeline()       │  batch: 14 steps → 25+ artifacts
+                        │   (insightiq/)         │
+                        └───────────┬───────────┘
+        ┌──────────────┬───────────┼────────────┬─────────────────┐
+        ▼              ▼           ▼             ▼                 ▼
+   ML models     A/B z-tests   Forecasting   Review NLP     LangGraph agents
+   • cancel risk • two-prop    • Holt-Winters • DistilBERT   Metrics→Experiment
+     (CV+calib     z-test        95% CI         sentiment    →CustomerVoice
+     +threshold)  • ship/roll   • anomalies    • c-TF-IDF    →ReleaseIncident
+   • KMeans seg     back          (IsoForest)   clustering        │
+   • feat. select                                                 ▼
+        │                                              DecisionOrchestrator
+        └──────────────► artifacts/ ◄────────────────  launch/iterate/rollback
+                              │                                   │
+                 ┌────────────▼────────────┐          SQLite (single source of truth)
+                 │  FastAPI  (backend/)     │          + Chroma vector store
+                 │  26 endpoints            │
+                 └────────────┬────────────┘
+                              ▼
+                 Next.js dashboard (frontend/)  ·  Streamlit demo (demo/)
+```
+
+**Two request flows:**
+- `POST /chat` — fast static reader over precomputed artifacts (no ML at request time).
+- `POST /ask` — **agentic**: question → LLM intent → Chroma retrieval → 4 LangGraph agents → rule-based orchestrator → LLM-synthesized answer with citations.
+
+Every ML/LLM component has an **offline fallback** (hash embeddings, lexicon sentiment, deterministic decisions), so the whole pipeline runs with no network or API token.
+
+---
+
+## 🚀 Quickstart
+
+**Backend + pipeline**
 ```bash
-cp .env.example .env
-export HF_TOKEN=your_huggingface_token
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python scripts/run_all.py
-python scripts/start_api.py
+cp .env.example .env            # optional: add HF_TOKEN for real LLM/embeddings
+
+python scripts/run_all.py       # runs the pipeline → writes artifacts/
+python scripts/start_api.py     # FastAPI at http://localhost:8000  (docs at /docs)
 ```
 
-The API will be available at `http://localhost:8000`.
-
-Docker path:
-
+**Frontend dashboard**
 ```bash
-cp .env.example .env
-docker compose up --build
+cd frontend
+npm install
+npm run dev                     # http://localhost:3000
 ```
 
-The pipeline automatically discovers the local `ecommerce_dataset/` folder. It builds a SQLite/DuckDB-compatible warehouse, indexes evidence into Chroma when installed, runs LangGraph decision orchestration, calls a Hugging Face open-source LLM when `HF_TOKEN` is configured, and writes decision artifacts.
+**Run fully offline (no HF token):** set `INSIGHTIQ_USE_HF_EMBEDDINGS=false` and `INSIGHTIQ_USE_HF_SENTIMENT=false` in `.env`.
 
-The ecommerce CSVs are the source of truth. Public ecommerce data does not contain internal product-management context, so InsightIQ synthesizes release notes, A/B tests, feature flags, engineering incidents, business glossary entries, and product documentation from the real category, brand, and order-date distribution.
-
-Expected outputs are written to `artifacts/`:
-
-- `insightiq.sqlite`
-- `kpi_summary.json`
-- `funnel_summary.csv`
-- `tableau_dashboard_extract.csv`
-- `review_intelligence.csv`
-- `segment_profiles.csv`
-- `anomalies.csv`
-- `forecast.csv`
-- `decision_memo.md`
-- `presentation.md`
-- `evaluation_report.json`
-- `experiment_decisions.csv`
-- `root_cause_hypotheses.csv`
-- `decision_intelligence_run.json`
-- `decision_intelligence_run.md`
-- `vector_db_status.json`
-- `cost_optimization_report.json`
-- `prd_compliance_matrix.csv`
-- `generated_fastapi_app.py`
-
-## Product Workflow
-
-InsightIQ follows this decision loop:
-
-1. Open Mixpanel: inspect event funnels, activation, retention, and drop-offs.
-2. Open Tableau: review BI dashboards for revenue, category, cohort, and segment performance.
-3. Write SQL: validate the metric movement directly from the warehouse.
-4. Ask Data Scientist: run forecasting, anomaly detection, segmentation, sentiment, and topic analysis.
-5. Read Reviews: connect qualitative pain points to product and revenue metrics.
-6. Read Release Notes: correlate launches, feature flags, experiments, and incidents with metric movement.
-7. Create Presentation: produce an executive narrative with evidence and trade-offs.
-8. Decision: recommend launch, iterate, rollback, or investigate.
-
-## Architecture
-
-See [docs/architecture.md](/Users/rakesh/Desktop/InsighIQ/docs/architecture.md) for the full production architecture and [docs/product_requirements.md](/Users/rakesh/Desktop/InsighIQ/docs/product_requirements.md) for MVP scope, KPIs, target users, edge cases, and resume positioning.
-
-The rebuilt Decision Intelligence architecture is documented in [docs/decision_intelligence_architecture.md](/Users/rakesh/Desktop/InsighIQ/docs/decision_intelligence_architecture.md).
-
-## Tech Stack
-
-- FastAPI and Uvicorn for the API.
-- LangGraph `StateGraph` for agent workflow orchestration.
-- Hugging Face `InferenceClient` for open-source LLM calls.
-- Chroma persistent vector DB for evidence retrieval.
-- SQLite plus optional DuckDB for warehouse analytics.
-- Pandas, NumPy, and scikit-learn for data science.
-- Streamlit for a minimal demo UI.
-- Docker, Render config, and GitHub Actions for deployment readiness.
-
-## Local Development
-
+**Tests**
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python scripts/generate_synthetic_datasets.py
-python scripts/run_all.py
-pytest
+pytest                          # 13 passing — data contracts + ML models
 ```
 
-Use `python3` instead of `python` on machines where only `python3` is installed.
+---
 
-The backend lives under `backend/` and exposes the generated decision intelligence artifacts through FastAPI. The core AI workflow lives under `insightiq/`.
+## 🔌 Selected API endpoints
 
-## Deploy
+| Endpoint | Returns |
+|---|---|
+| `GET /model/evaluation` | Leaderboard (CV AUC), calibration, threshold sweep, feature importance, business case |
+| `GET /model/feature-selection` | 5-method comparison + consensus vote + subset AUC |
+| `POST /model/predict` | Score one order → probability, risk band, flagged, operating threshold |
+| `POST /ask` | Agentic decision answer with evidence + citations |
+| `GET /experiments/decisions` | A/B z-test readouts → ship / rollback / iterate |
+| `GET /metrics/summary` · `/metrics/funnel` | KPIs and funnel |
+| `GET /recommendations/decision` | Orchestrated launch/iterate/rollback/investigate |
 
-Run the complete workflow locally:
+Full list at `/docs` (FastAPI Swagger UI).
 
-```bash
-python scripts/run_all.py
+---
+
+## 🧠 ML / DS stack
+
+- **Supervised:** Logistic Regression, KNN, Random Forest, HistGradientBoosting, XGBoost — compared by cross-validated ROC-AUC, isotonic-calibrated, thresholded.
+- **Feature selection:** mutual-information filter, L1/Lasso, RFECV, forward + backward wrappers, consensus vote.
+- **Unsupervised:** KMeans segmentation, IsolationForest anomalies, c-TF-IDF complaint clustering over MiniLM embeddings.
+- **Stats / time series:** two-proportion z-tests (A/B), Holt-Winters forecasting with 95% CI.
+- **NLP / retrieval:** DistilBERT sentiment (SST-2), sentence-transformers embeddings, Chroma vector store.
+- **Agents / LLM:** LangGraph `StateGraph` (4 agents), Hugging Face `InferenceClient` (Llama-3.1-8B-Instruct).
+
+---
+
+## 📂 Project structure
+
+```
+insightiq/       core AI logic — pipeline, ml/, agents/, graph/, knowledge/, llm/
+backend/         FastAPI service (26 endpoints)
+frontend/        Next.js + TypeScript dashboard (9 pages, Recharts)
+artifacts/       generated outputs (CSV/JSON/MD) + persisted model + SQLite warehouse
+data_synthetic/  synthesized PM context (release notes, A/B tests, incidents, flags)
+ecommerce_dataset/  source-of-truth CSVs
+docs/            architecture, PRD, case study, monitoring, interview Q&A
+tests/           pytest suites (data contracts + ML)
 ```
 
-Start the API after artifacts are generated:
+---
 
-```bash
-uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
-```
+## 📚 Docs
 
-Render-style deployment config is available at [deployment/render.yaml](/Users/rakesh/Desktop/InsighIQ/deployment/render.yaml). Resume and interview positioning is available at [docs/resume_project_case_study.md](/Users/rakesh/Desktop/InsighIQ/docs/resume_project_case_study.md).
+- [Resume / project case study](docs/resume_project_case_study.md) — positioning + quantified bullets
+- [Interview Q&A / objection handling](docs/interview_qa.md) — how each decision is defended
+- [Productionization & monitoring](docs/productionization_and_monitoring.md) — serving, drift, retraining
+- [Architecture](docs/architecture.md) · [Product requirements](docs/product_requirements.md) · [Decision-intelligence design](docs/decision_intelligence_architecture.md)
 
-Minimal demo UI:
+---
 
-```bash
-streamlit run demo/streamlit_app.py
-```
+## 🛠️ Tech stack
+
+Python · pandas · scikit-learn · XGBoost · statsmodels · sentence-transformers · Chroma · LangGraph · Hugging Face Inference · FastAPI · **SQLite (single source of truth)** · Next.js / TypeScript / Recharts · Docker · Render.
+
+## License
+
+MIT — see `LICENSE` (add one if not present).
