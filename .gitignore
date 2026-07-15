@@ -23,6 +23,3 @@ artifacts/warehouse_export/
 
 # keep all generated artifact files in git so Streamlit Cloud can read them
 !artifacts/.gitkeep
-
-# CI workflow — re-add after `gh auth refresh -s workflow`
-.github/workflows/ci.yml
