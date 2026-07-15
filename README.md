@@ -179,7 +179,7 @@ tests/           pytest suites (data contracts + ML)
 
 | Service | Host | Notes |
 |---|---|---|
-| **Backend API** | Render (`deployment/render.yaml`) | One-click button above. Binds `$PORT`, `/health` check, rebuilds artifacts on boot. Runs tokenless by default. |
+| **Backend API** | Render (`render.yaml`) | One-click button above. Binds `$PORT`, `/health` check, rebuilds artifacts on boot. Runs tokenless by default. |
 | **Frontend** | Vercel | Import `frontend/`, set `NEXT_PUBLIC_API_URL` to your Render API URL. |
 | **Container** | Docker | `docker compose up --build` → API on `:8000`. |
 
