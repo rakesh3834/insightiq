@@ -1,0 +1,19 @@
+prd_requirement,status,artifact
+Use provided ecommerce dataset,complete,"ecommerce_dataset/*.csv, artifacts/insightiq.sqlite"
+"Synthesize unavailable release notes, A/B tests, feature flags, incidents, glossary, docs",complete,data_synthetic/*.csv
+Open Mixpanel equivalent,complete,artifacts/funnel_summary.csv
+Open Tableau equivalent,complete,artifacts/tableau_dashboard_extract.csv
+Write SQL,complete,database/analytics_queries.sql
+Ask Data Scientist,complete,"artifacts/anomalies.csv, forecast.csv, segment_profiles.csv"
+Read Reviews,complete,artifacts/review_intelligence.csv
+Read Release Notes,complete,artifacts/release_impact.csv
+Reason over evidence,complete,artifacts/decision_intelligence_run.json
+Agentic AI workflow,complete,"insightiq/core/orchestrator.py, insightiq/agents/decision_agents.py"
+Vector-search-ready knowledge layer,complete,insightiq/knowledge/evidence_store.py
+DuckDB/PostgreSQL-compatible warehouse path,complete,"insightiq/data/warehouse.py, artifacts/insightiq.sqlite"
+Create Presentation,complete,artifacts/presentation.md
+Decision,complete,artifacts/decision_memo.md
+FastAPI deployable API,complete,backend/app/main.py
+Minimal UI only,complete,demo/streamlit_app.py
+Docker deployment path,complete,docker/Dockerfile
+Resume-ready AI/Product/Data story,complete,docs/resume_project_case_study.md

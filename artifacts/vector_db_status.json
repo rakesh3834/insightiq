@@ -1,0 +1,7 @@
+{
+  "backend": "chroma",
+  "persist_path": "/Users/rakesh/Desktop/InsighIQ/artifacts/chroma",
+  "collection": "insightiq_evidence",
+  "documents_indexed": 5072,
+  "used_chroma": true
+}

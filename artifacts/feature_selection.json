@@ -1,0 +1,167 @@
+{
+  "n_samples": 5000,
+  "cv_folds": 4,
+  "methods": [
+    "Mutual Information",
+    "L1 (Lasso)",
+    "RFECV",
+    "Forward SFS",
+    "Backward SBS"
+  ],
+  "selection": [
+    {
+      "feature": "order_value",
+      "mi_score": 0.049,
+      "mutual_information": true,
+      "l1": true,
+      "rfecv": true,
+      "sfs": true,
+      "sbs": true,
+      "votes": 5
+    },
+    {
+      "feature": "total_qty",
+      "mi_score": 0.0279,
+      "mutual_information": true,
+      "l1": true,
+      "rfecv": true,
+      "sfs": true,
+      "sbs": true,
+      "votes": 5
+    },
+    {
+      "feature": "n_items",
+      "mi_score": 0.0282,
+      "mutual_information": true,
+      "l1": true,
+      "rfecv": true,
+      "sfs": false,
+      "sbs": true,
+      "votes": 4
+    },
+    {
+      "feature": "avg_item_price",
+      "mi_score": 0.0233,
+      "mutual_information": true,
+      "l1": true,
+      "rfecv": true,
+      "sfs": false,
+      "sbs": true,
+      "votes": 4
+    },
+    {
+      "feature": "account_age_days",
+      "mi_score": 0.0117,
+      "mutual_information": false,
+      "l1": true,
+      "rfecv": true,
+      "sfs": true,
+      "sbs": true,
+      "votes": 4
+    },
+    {
+      "feature": "n_events",
+      "mi_score": 0.0,
+      "mutual_information": false,
+      "l1": true,
+      "rfecv": true,
+      "sfs": true,
+      "sbs": true,
+      "votes": 4
+    },
+    {
+      "feature": "gender_Male",
+      "mi_score": 0.0,
+      "mutual_information": false,
+      "l1": true,
+      "rfecv": true,
+      "sfs": true,
+      "sbs": true,
+      "votes": 4
+    },
+    {
+      "feature": "order_hour",
+      "mi_score": 0.0,
+      "mutual_information": false,
+      "l1": true,
+      "rfecv": true,
+      "sfs": false,
+      "sbs": true,
+      "votes": 3
+    },
+    {
+      "feature": "gender_Female",
+      "mi_score": 0.0,
+      "mutual_information": false,
+      "l1": true,
+      "rfecv": true,
+      "sfs": false,
+      "sbs": true,
+      "votes": 3
+    },
+    {
+      "feature": "gender_Other",
+      "mi_score": 0.0005,
+      "mutual_information": false,
+      "l1": false,
+      "rfecv": true,
+      "sfs": false,
+      "sbs": true,
+      "votes": 2
+    },
+    {
+      "feature": "is_weekend",
+      "mi_score": 0.0,
+      "mutual_information": false,
+      "l1": true,
+      "rfecv": true,
+      "sfs": false,
+      "sbs": false,
+      "votes": 2
+    }
+  ],
+  "subset_auc": [
+    {
+      "method": "Full feature set",
+      "n_features": 11,
+      "roc_auc": 0.749
+    },
+    {
+      "method": "Mutual Information",
+      "n_features": 4,
+      "roc_auc": 0.6888
+    },
+    {
+      "method": "L1 (Lasso)",
+      "n_features": 10,
+      "roc_auc": 0.749
+    },
+    {
+      "method": "RFECV",
+      "n_features": 11,
+      "roc_auc": 0.749
+    },
+    {
+      "method": "Forward SFS",
+      "n_features": 5,
+      "roc_auc": 0.7482
+    },
+    {
+      "method": "Backward SBS",
+      "n_features": 10,
+      "roc_auc": 0.7491
+    }
+  ],
+  "consensus_features": [
+    "order_value",
+    "total_qty",
+    "n_items",
+    "avg_item_price",
+    "account_age_days",
+    "n_events",
+    "gender_Male",
+    "order_hour",
+    "gender_Female"
+  ],
+  "note": "Consensus = kept by \u22653 of 5 methods. Wrappers use Logistic Regression with balanced class weights."
+}

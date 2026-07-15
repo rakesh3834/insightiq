@@ -1,0 +1,25 @@
+release_id,release_date,feature_area,release_type,title,description,expected_metric
+REL-001,2024-01-27,Clothing,feature,Clothing improvement wave 1,Improved clothing experience for Zenith traffic to reduce friction and improve purchase_conversion.,purchase_conversion
+REL-002,2024-02-23,Toys,feature,Toys improvement wave 2,Improved toys experience for Harbor traffic to reduce friction and improve cart_rate.,cart_rate
+REL-003,2024-03-20,Pet Supplies,performance,Pet Supplies improvement wave 3,Improved pet supplies experience for Nimbus traffic to reduce friction and improve refund_rate.,refund_rate
+REL-004,2024-04-15,Beauty,bugfix,Beauty improvement wave 4,Improved beauty experience for GreenLeaf traffic to reduce friction and improve review_rating.,review_rating
+REL-005,2024-05-11,Electronics,performance,Electronics improvement wave 5,Improved electronics experience for Astra traffic to reduce friction and improve revenue.,revenue
+REL-006,2024-06-07,Home & Kitchen,feature,Home & Kitchen improvement wave 6,Improved home & kitchen experience for Willow traffic to reduce friction and improve purchase_conversion.,purchase_conversion
+REL-007,2024-07-03,Books,performance,Books improvement wave 7,Improved books experience for NeoTech traffic to reduce friction and improve cart_rate.,cart_rate
+REL-008,2024-07-29,Automotive,experiment,Automotive improvement wave 8,Improved automotive experience for Orion traffic to reduce friction and improve refund_rate.,refund_rate
+REL-009,2024-08-24,Search,feature,Search improvement wave 9,Improved search experience for Zenith traffic to reduce friction and improve review_rating.,review_rating
+REL-010,2024-09-20,Checkout,performance,Checkout improvement wave 10,Improved checkout experience for Harbor traffic to reduce friction and improve revenue.,revenue
+REL-011,2024-10-16,Recommendations,performance,Recommendations improvement wave 11,Improved recommendations experience for Nimbus traffic to reduce friction and improve purchase_conversion.,purchase_conversion
+REL-012,2024-11-11,Reviews,performance,Reviews improvement wave 12,Improved reviews experience for GreenLeaf traffic to reduce friction and improve cart_rate.,cart_rate
+REL-013,2024-12-08,Clothing,feature,Clothing improvement wave 13,Improved clothing experience for Astra traffic to reduce friction and improve refund_rate.,refund_rate
+REL-014,2025-01-03,Toys,bugfix,Toys improvement wave 14,Improved toys experience for Willow traffic to reduce friction and improve review_rating.,review_rating
+REL-015,2025-01-29,Pet Supplies,bugfix,Pet Supplies improvement wave 15,Improved pet supplies experience for NeoTech traffic to reduce friction and improve revenue.,revenue
+REL-016,2025-02-24,Beauty,bugfix,Beauty improvement wave 16,Improved beauty experience for Orion traffic to reduce friction and improve purchase_conversion.,purchase_conversion
+REL-017,2025-03-23,Electronics,performance,Electronics improvement wave 17,Improved electronics experience for Zenith traffic to reduce friction and improve cart_rate.,cart_rate
+REL-018,2025-04-18,Home & Kitchen,experiment,Home & Kitchen improvement wave 18,Improved home & kitchen experience for Harbor traffic to reduce friction and improve refund_rate.,refund_rate
+REL-019,2025-05-14,Books,experiment,Books improvement wave 19,Improved books experience for Nimbus traffic to reduce friction and improve review_rating.,review_rating
+REL-020,2025-06-09,Automotive,feature,Automotive improvement wave 20,Improved automotive experience for GreenLeaf traffic to reduce friction and improve revenue.,revenue
+REL-021,2025-07-06,Search,performance,Search improvement wave 21,Improved search experience for Astra traffic to reduce friction and improve purchase_conversion.,purchase_conversion
+REL-022,2025-08-01,Checkout,feature,Checkout improvement wave 22,Improved checkout experience for Willow traffic to reduce friction and improve cart_rate.,cart_rate
+REL-023,2025-08-27,Recommendations,experiment,Recommendations improvement wave 23,Improved recommendations experience for NeoTech traffic to reduce friction and improve refund_rate.,refund_rate
+REL-024,2025-09-22,Reviews,feature,Reviews improvement wave 24,Improved reviews experience for Orion traffic to reduce friction and improve review_rating.,review_rating

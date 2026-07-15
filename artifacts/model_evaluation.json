@@ -1,0 +1,459 @@
+{
+  "target": "order cancellation (realistic risk label)",
+  "n_samples": 20000,
+  "n_train": 15000,
+  "n_test": 5000,
+  "base_rate": 0.2614,
+  "cv_folds": 5,
+  "selection_metric": "cross-validated ROC-AUC",
+  "features": [
+    "order_value",
+    "n_items",
+    "total_qty",
+    "avg_item_price",
+    "n_events",
+    "account_age_days",
+    "order_hour",
+    "is_weekend",
+    "gender"
+  ],
+  "models": [
+    {
+      "model": "Logistic Regression",
+      "cv_auc_mean": 0.7412,
+      "cv_auc_std": 0.0126,
+      "roc_auc": 0.7336,
+      "precision": 0.4235,
+      "recall": 0.6266,
+      "f1": 0.5054,
+      "accuracy": 0.6794
+    },
+    {
+      "model": "Random Forest",
+      "cv_auc_mean": 0.7361,
+      "cv_auc_std": 0.0137,
+      "roc_auc": 0.7246,
+      "precision": 0.4287,
+      "recall": 0.5937,
+      "f1": 0.4979,
+      "accuracy": 0.687
+    },
+    {
+      "model": "HistGradientBoosting",
+      "cv_auc_mean": 0.7353,
+      "cv_auc_std": 0.0131,
+      "roc_auc": 0.7246,
+      "precision": 0.4184,
+      "recall": 0.6236,
+      "f1": 0.5008,
+      "accuracy": 0.675
+    },
+    {
+      "model": "XGBoost",
+      "cv_auc_mean": 0.7191,
+      "cv_auc_std": 0.0135,
+      "roc_auc": 0.7137,
+      "precision": 0.4232,
+      "recall": 0.5907,
+      "f1": 0.4931,
+      "accuracy": 0.6826
+    },
+    {
+      "model": "K-Nearest Neighbors",
+      "cv_auc_mean": 0.7097,
+      "cv_auc_std": 0.0139,
+      "roc_auc": 0.7,
+      "precision": 0.6131,
+      "recall": 0.251,
+      "f1": 0.3561,
+      "accuracy": 0.7628
+    }
+  ],
+  "best_model": "Logistic Regression",
+  "best_metrics": {
+    "model": "Logistic Regression",
+    "cv_auc_mean": 0.7412,
+    "cv_auc_std": 0.0126,
+    "roc_auc": 0.7336,
+    "precision": 0.4235,
+    "recall": 0.6266,
+    "f1": 0.5054,
+    "accuracy": 0.6794
+  },
+  "feature_importance": [
+    {
+      "feature": "order_value",
+      "importance": 0.0656
+    },
+    {
+      "feature": "account_age_days",
+      "importance": 0.0606
+    },
+    {
+      "feature": "total_qty",
+      "importance": 0.0396
+    },
+    {
+      "feature": "n_events",
+      "importance": 0.0244
+    },
+    {
+      "feature": "order_hour",
+      "importance": 0.0029
+    },
+    {
+      "feature": "n_items",
+      "importance": 0.0006
+    },
+    {
+      "feature": "is_weekend",
+      "importance": 0.0006
+    },
+    {
+      "feature": "gender",
+      "importance": 0.0
+    },
+    {
+      "feature": "avg_item_price",
+      "importance": -0.0003
+    }
+  ],
+  "roc_curve": {
+    "fpr": [
+      0.0,
+      0.0016,
+      0.0035,
+      0.0103,
+      0.0144,
+      0.0249,
+      0.0287,
+      0.033,
+      0.0398,
+      0.0444,
+      0.0493,
+      0.0699,
+      0.0853,
+      0.0926,
+      0.104,
+      0.1208,
+      0.1376,
+      0.1462,
+      0.1793,
+      0.1969,
+      0.205,
+      0.2564,
+      0.3033,
+      0.3485,
+      0.4081,
+      0.4314,
+      0.4858,
+      0.5519,
+      0.5873,
+      0.6084,
+      0.6485,
+      0.707,
+      0.7696,
+      0.8316,
+      0.844,
+      0.8589,
+      0.8703,
+      0.9058,
+      0.9662,
+      1.0
+    ],
+    "tpr": [
+      0.0,
+      0.0559,
+      0.0895,
+      0.137,
+      0.1492,
+      0.2035,
+      0.2219,
+      0.2334,
+      0.251,
+      0.2601,
+      0.2724,
+      0.3321,
+      0.3634,
+      0.391,
+      0.4086,
+      0.4246,
+      0.4445,
+      0.4598,
+      0.4904,
+      0.5096,
+      0.5195,
+      0.5807,
+      0.6289,
+      0.6748,
+      0.7184,
+      0.7422,
+      0.7812,
+      0.8294,
+      0.8477,
+      0.8638,
+      0.8891,
+      0.9158,
+      0.9396,
+      0.9671,
+      0.9725,
+      0.9748,
+      0.9755,
+      0.9839,
+      0.9969,
+      1.0
+    ]
+  },
+  "confusion_matrix": [
+    [
+      2523,
+      1170
+    ],
+    [
+      460,
+      847
+    ]
+  ],
+  "calibration": {
+    "method": "isotonic",
+    "brier_uncalibrated": 0.2038,
+    "brier_calibrated": 0.1618,
+    "reliability_uncalibrated": [
+      {
+        "mean_predicted": 0.1375,
+        "observed_frequency": 0.062
+      },
+      {
+        "mean_predicted": 0.2381,
+        "observed_frequency": 0.118
+      },
+      {
+        "mean_predicted": 0.3101,
+        "observed_frequency": 0.14
+      },
+      {
+        "mean_predicted": 0.3657,
+        "observed_frequency": 0.164
+      },
+      {
+        "mean_predicted": 0.4149,
+        "observed_frequency": 0.222
+      },
+      {
+        "mean_predicted": 0.466,
+        "observed_frequency": 0.228
+      },
+      {
+        "mean_predicted": 0.5207,
+        "observed_frequency": 0.288
+      },
+      {
+        "mean_predicted": 0.5875,
+        "observed_frequency": 0.288
+      },
+      {
+        "mean_predicted": 0.6796,
+        "observed_frequency": 0.422
+      },
+      {
+        "mean_predicted": 0.8438,
+        "observed_frequency": 0.682
+      }
+    ],
+    "reliability_calibrated": [
+      {
+        "mean_predicted": 0.0346,
+        "observed_frequency": 0.0626
+      },
+      {
+        "mean_predicted": 0.1002,
+        "observed_frequency": 0.1199
+      },
+      {
+        "mean_predicted": 0.144,
+        "observed_frequency": 0.1397
+      },
+      {
+        "mean_predicted": 0.1878,
+        "observed_frequency": 0.1705
+      },
+      {
+        "mean_predicted": 0.2105,
+        "observed_frequency": 0.2311
+      },
+      {
+        "mean_predicted": 0.2369,
+        "observed_frequency": 0.2138
+      },
+      {
+        "mean_predicted": 0.2809,
+        "observed_frequency": 0.2994
+      },
+      {
+        "mean_predicted": 0.333,
+        "observed_frequency": 0.2791
+      },
+      {
+        "mean_predicted": 0.4297,
+        "observed_frequency": 0.4283
+      },
+      {
+        "mean_predicted": 0.6752,
+        "observed_frequency": 0.6842
+      }
+    ]
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.1,
+      "precision": 0.2935,
+      "recall": 0.9633,
+      "f1": 0.45,
+      "flagged_rate": 0.8578
+    },
+    {
+      "threshold": 0.15,
+      "precision": 0.3266,
+      "recall": 0.8891,
+      "f1": 0.4777,
+      "flagged_rate": 0.7116
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.3545,
+      "recall": 0.8141,
+      "f1": 0.494,
+      "flagged_rate": 0.6002
+    },
+    {
+      "threshold": 0.25,
+      "precision": 0.4199,
+      "recall": 0.648,
+      "f1": 0.5096,
+      "flagged_rate": 0.4034
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.4722,
+      "recall": 0.5203,
+      "f1": 0.4951,
+      "flagged_rate": 0.288
+    },
+    {
+      "threshold": 0.35,
+      "precision": 0.5324,
+      "recall": 0.4461,
+      "f1": 0.4854,
+      "flagged_rate": 0.219
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.5789,
+      "recall": 0.4124,
+      "f1": 0.4817,
+      "flagged_rate": 0.1862
+    },
+    {
+      "threshold": 0.45,
+      "precision": 0.663,
+      "recall": 0.2739,
+      "f1": 0.3877,
+      "flagged_rate": 0.108
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.6899,
+      "recall": 0.2502,
+      "f1": 0.3672,
+      "flagged_rate": 0.0948
+    },
+    {
+      "threshold": 0.55,
+      "precision": 0.7323,
+      "recall": 0.2219,
+      "f1": 0.3406,
+      "flagged_rate": 0.0792
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.7507,
+      "recall": 0.1982,
+      "f1": 0.3136,
+      "flagged_rate": 0.069
+    },
+    {
+      "threshold": 0.65,
+      "precision": 0.8249,
+      "recall": 0.137,
+      "f1": 0.2349,
+      "flagged_rate": 0.0434
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.8955,
+      "recall": 0.0918,
+      "f1": 0.1666,
+      "flagged_rate": 0.0268
+    },
+    {
+      "threshold": 0.75,
+      "precision": 0.9068,
+      "recall": 0.0819,
+      "f1": 0.1502,
+      "flagged_rate": 0.0236
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.9241,
+      "recall": 0.0559,
+      "f1": 0.1053,
+      "flagged_rate": 0.0158
+    },
+    {
+      "threshold": 0.85,
+      "precision": 0.92,
+      "recall": 0.0528,
+      "f1": 0.0999,
+      "flagged_rate": 0.015
+    },
+    {
+      "threshold": 0.9,
+      "precision": 0.9385,
+      "recall": 0.0467,
+      "f1": 0.0889,
+      "flagged_rate": 0.013
+    }
+  ],
+  "recommended_threshold": {
+    "threshold": 0.25,
+    "precision": 0.4199,
+    "recall": 0.648,
+    "f1": 0.5096,
+    "flagged_rate": 0.4034,
+    "criterion": "max F1"
+  },
+  "business_case": {
+    "problem": "Orders cancel after checkout, leaking revenue and burning fulfilment cost on orders that never complete.",
+    "why_this_model": "Cancellation is a pre-fulfilment decision: a calibrated per-order risk score lets ops intervene (verify payment, prioritise support, hold shipment) before the revenue is lost. Logistic Regression wins on cross-validated AUC, scores in <1ms, and yields calibrated probabilities ops can act on.",
+    "decision_enabled": "Flag high-risk orders for a proactive save-intervention at the F1-optimal threshold.",
+    "primary_metric": "Cancellation rate \u2192 recovered GMV",
+    "operating_threshold": 0.25,
+    "avg_order_value": 595.93,
+    "assumed_save_rate": 0.35,
+    "test_window": {
+      "orders": 5000,
+      "caught_cancellations": 847,
+      "missed_cancellations": 460,
+      "false_alarms": 1170,
+      "flagged_for_review": 2017,
+      "review_rate": 0.4034,
+      "precision": 0.4199,
+      "recall": 0.648
+    },
+    "recovered_gmv": 176664.47,
+    "leaked_gmv_if_no_action": 274129.39,
+    "lever": "The threshold is the business lever: lower it to recover more revenue (higher recall, more manual reviews); raise it to cut ops cost (higher precision, fewer flags).",
+    "recovered_gmv_formula": "recovered_gmv = caught_cancellations \u00d7 avg_order_value \u00d7 save_rate"
+  },
+  "note": "Label is a documented synthetic risk process; pipeline/evaluation are production-shaped. Model selected by cross-validated ROC-AUC, probabilities isotonic-calibrated, and the operating threshold chosen by max-F1 on a held-out test set."
+}

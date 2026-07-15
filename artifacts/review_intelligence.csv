@@ -1,0 +1,841 @@
+category,brand,topic,sentiment,reviews,avg_rating,avg_sentiment,example_review
+Automotive,Willow,product / highly / brand,positive,64,3.672,0.9998,"Excellent product, will buy again."
+Toys,Nimbus,product / highly / brand,positive,60,3.433,0.9998,Highly recommend this brand.
+Electronics,Willow,product / highly / brand,positive,59,3.678,0.9998,"Excellent product, will buy again."
+Clothing,Orion,product / highly / brand,positive,57,3.754,0.9998,Highly recommend this brand.
+Beauty,Willow,product / highly / brand,positive,57,3.596,0.9998,Highly recommend this brand.
+Beauty,Astra,product / highly / brand,positive,57,3.772,0.9998,Highly recommend this brand.
+Clothing,GreenLeaf,product / highly / brand,positive,56,3.5,0.9998,Highly recommend this brand.
+Clothing,Harbor,product / highly / brand,positive,54,3.5,0.9998,"Excellent product, will buy again."
+Sports,Nimbus,product / highly / brand,positive,54,3.574,0.9998,Decent product for the price.
+Books,Orion,product / highly / brand,positive,52,3.442,0.9998,"Excellent product, will buy again."
+Sports,Harbor,product / highly / brand,positive,52,3.538,0.9998,Decent product for the price.
+Electronics,Orion,product / highly / brand,positive,52,3.519,0.9998,Highly recommend this brand.
+Electronics,Acme,product / highly / brand,positive,51,3.529,0.9998,Decent product for the price.
+Pet Supplies,Willow,product / highly / brand,positive,51,3.451,0.9998,Decent product for the price.
+Toys,Solace,product / highly / brand,positive,51,3.529,0.9998,"Excellent product, will buy again."
+Toys,Zenith,product / highly / brand,positive,50,3.68,0.9998,Decent product for the price.
+Beauty,Everest,product / highly / brand,positive,50,3.48,0.9998,Highly recommend this brand.
+Clothing,NeoTech,product / highly / brand,positive,50,3.9,0.9998,"Excellent product, will buy again."
+Beauty,Zenith,product / highly / brand,positive,49,3.449,0.9998,Highly recommend this brand.
+Toys,Astra,product / highly / brand,positive,49,3.469,0.9998,Highly recommend this brand.
+Home & Kitchen,Everest,product / highly / brand,positive,49,3.286,0.9998,Highly recommend this brand.
+Pet Supplies,NeoTech,product / highly / brand,positive,48,3.833,0.9998,"Excellent product, will buy again."
+Groceries,GreenLeaf,product / highly / brand,positive,48,3.771,0.9998,"Excellent product, will buy again."
+Clothing,Everest,product / highly / brand,positive,48,3.708,0.9998,Decent product for the price.
+Pet Supplies,Astra,product / highly / brand,positive,48,3.667,0.9998,Decent product for the price.
+Automotive,Astra,product / highly / brand,positive,48,3.604,0.9998,Highly recommend this brand.
+Toys,GreenLeaf,product / highly / brand,positive,48,3.5,0.9998,"Excellent product, will buy again."
+Home & Kitchen,Harbor,product / highly / brand,positive,47,3.426,0.9998,Highly recommend this brand.
+Toys,Zenith,arrived / customer / helpful,positive,46,3.63,0.999,Fast shipping and good packaging.
+Pet Supplies,Zenith,product / highly / brand,positive,46,3.478,0.9998,"Excellent product, will buy again."
+Sports,Zenith,product / highly / brand,positive,46,3.565,0.9998,Decent product for the price.
+Beauty,Orion,product / highly / brand,positive,46,3.457,0.9998,Highly recommend this brand.
+Books,Harbor,product / highly / brand,positive,45,3.578,0.9998,Highly recommend this brand.
+Groceries,NeoTech,product / highly / brand,positive,45,3.489,0.9998,Decent product for the price.
+Home & Kitchen,Zenith,product / highly / brand,positive,45,3.533,0.9998,"Excellent product, will buy again."
+Pet Supplies,Orion,product / highly / brand,positive,45,3.689,0.9998,"Excellent product, will buy again."
+Clothing,Harbor,arrived / customer / helpful,positive,44,3.614,0.999,Fast shipping and good packaging.
+Home & Kitchen,Willow,product / highly / brand,positive,44,3.636,0.9998,Highly recommend this brand.
+Toys,Pulse,product / highly / brand,positive,44,3.455,0.9998,Decent product for the price.
+Home & Kitchen,Nimbus,product / highly / brand,positive,44,3.568,0.9998,Highly recommend this brand.
+Home & Kitchen,NeoTech,product / highly / brand,positive,43,3.395,0.9998,Highly recommend this brand.
+Toys,Acme,product / highly / brand,positive,43,3.791,0.9998,"Excellent product, will buy again."
+Toys,Nimbus,arrived / customer / helpful,positive,41,3.512,0.999,Customer service was helpful.
+Books,Willow,product / highly / brand,positive,41,3.707,0.9998,Highly recommend this brand.
+Electronics,Pulse,product / highly / brand,positive,41,3.561,0.9998,Decent product for the price.
+Books,GreenLeaf,product / highly / brand,positive,41,3.439,0.9998,Highly recommend this brand.
+Toys,Everest,product / highly / brand,positive,41,3.537,0.9998,Decent product for the price.
+Pet Supplies,Zenith,arrived / customer / helpful,positive,40,3.75,0.999,Fast shipping and good packaging.
+Books,NeoTech,product / highly / brand,positive,40,3.65,0.9998,Highly recommend this brand.
+Home & Kitchen,Solace,product / highly / brand,positive,40,3.375,0.9998,Highly recommend this brand.
+Sports,NeoTech,product / highly / brand,positive,40,3.75,0.9998,Decent product for the price.
+Clothing,Acme,product / highly / brand,positive,40,3.225,0.9998,"Excellent product, will buy again."
+Sports,Solace,product / highly / brand,positive,39,3.487,0.9998,Highly recommend this brand.
+Books,Acme,product / highly / brand,positive,39,3.615,0.9998,Highly recommend this brand.
+Groceries,Nimbus,product / highly / brand,positive,39,3.205,0.9998,"Excellent product, will buy again."
+Beauty,Nimbus,arrived / customer / helpful,positive,38,3.5,0.999,Customer service was helpful.
+Groceries,NeoTech,arrived / customer / helpful,positive,38,3.316,0.9994,Customer service was helpful.
+Books,Zenith,product / highly / brand,positive,38,3.684,0.9998,Decent product for the price.
+Electronics,Astra,product / highly / brand,positive,38,3.816,0.9998,"Excellent product, will buy again."
+Beauty,GreenLeaf,product / highly / brand,positive,38,3.763,0.9998,Highly recommend this brand.
+Automotive,Willow,arrived / customer / helpful,positive,37,3.351,0.9989,Fast shipping and good packaging.
+Pet Supplies,Harbor,product / highly / brand,positive,37,3.297,0.9998,Decent product for the price.
+Sports,Acme,product / highly / brand,positive,37,3.649,0.9998,Highly recommend this brand.
+Groceries,Acme,product / highly / brand,positive,37,3.432,0.9998,Decent product for the price.
+Pet Supplies,Pulse,product / highly / brand,positive,37,3.865,0.9998,Highly recommend this brand.
+Toys,NeoTech,arrived / customer / helpful,positive,36,3.667,0.9991,Fast shipping and good packaging.
+Automotive,Nimbus,product / highly / brand,positive,36,3.694,0.9998,"Excellent product, will buy again."
+Automotive,Everest,product / highly / brand,positive,36,3.667,0.9998,Decent product for the price.
+Electronics,Nimbus,product / highly / brand,positive,36,3.5,0.9998,Decent product for the price.
+Beauty,Nimbus,product / highly / brand,positive,36,3.611,0.9998,"Excellent product, will buy again."
+Pet Supplies,GreenLeaf,product / highly / brand,positive,36,3.917,0.9998,"Excellent product, will buy again."
+Toys,NeoTech,product / highly / brand,positive,36,3.472,0.9998,Highly recommend this brand.
+Toys,Orion,arrived / customer / helpful,positive,35,3.371,0.999,Fast shipping and good packaging.
+Clothing,GreenLeaf,arrived / customer / helpful,positive,35,3.343,0.9991,Fast shipping and good packaging.
+Pet Supplies,Orion,arrived / customer / helpful,positive,35,3.571,0.9992,Fast shipping and good packaging.
+Automotive,Harbor,product / highly / brand,positive,35,3.629,0.9998,Decent product for the price.
+Electronics,Zenith,product / highly / brand,positive,35,3.171,0.9998,Decent product for the price.
+Books,Nimbus,product / highly / brand,positive,35,3.514,0.9998,Highly recommend this brand.
+Electronics,GreenLeaf,product / highly / brand,positive,35,3.629,0.9998,"Excellent product, will buy again."
+Pet Supplies,Solace,product / highly / brand,positive,35,3.629,0.9998,Highly recommend this brand.
+Sports,Zenith,arrived / customer / helpful,positive,34,3.441,0.9988,Fast shipping and good packaging.
+Beauty,Solace,arrived / customer / helpful,positive,34,3.765,0.999,Customer service was helpful.
+Home & Kitchen,Zenith,arrived / customer / helpful,positive,34,3.618,0.999,Customer service was helpful.
+Books,GreenLeaf,arrived / customer / helpful,positive,34,3.176,0.9991,Fast shipping and good packaging.
+Home & Kitchen,Orion,product / highly / brand,positive,34,3.5,0.9998,Decent product for the price.
+Beauty,Solace,product / highly / brand,positive,34,3.765,0.9998,Decent product for the price.
+Groceries,Orion,product / highly / brand,positive,34,3.559,0.9998,Decent product for the price.
+Beauty,Harbor,product / highly / brand,positive,34,3.706,0.9998,Highly recommend this brand.
+Groceries,Zenith,arrived / customer / helpful,positive,33,3.697,0.9989,Customer service was helpful.
+Beauty,Everest,arrived / customer / helpful,positive,33,3.485,0.9989,Customer service was helpful.
+Toys,Pulse,arrived / customer / helpful,positive,33,3.606,0.9989,Fast shipping and good packaging.
+Pet Supplies,GreenLeaf,arrived / customer / helpful,positive,33,3.909,0.999,Fast shipping and good packaging.
+Clothing,Orion,arrived / customer / helpful,positive,33,3.364,0.9992,Fast shipping and good packaging.
+Pet Supplies,Astra,arrived / customer / helpful,positive,33,3.515,0.9992,Customer service was helpful.
+Beauty,Willow,arrived / customer / helpful,positive,33,3.545,0.9992,Fast shipping and good packaging.
+Groceries,Zenith,product / highly / brand,positive,33,3.515,0.9998,Highly recommend this brand.
+Clothing,Willow,product / highly / brand,positive,33,3.364,0.9998,Highly recommend this brand.
+Electronics,Orion,arrived / customer / helpful,positive,32,3.562,0.9988,Fast shipping and good packaging.
+Books,Nimbus,arrived / customer / helpful,positive,32,3.5,0.999,Customer service was helpful.
+Groceries,Astra,product / highly / brand,positive,32,3.5,0.9998,Decent product for the price.
+Clothing,Solace,product / highly / brand,positive,32,3.625,0.9998,Highly recommend this brand.
+Pet Supplies,Everest,product / highly / brand,positive,32,3.438,0.9998,"Excellent product, will buy again."
+Automotive,NeoTech,product / highly / brand,positive,32,3.281,0.9998,Decent product for the price.
+Clothing,Zenith,product / highly / brand,positive,32,3.438,0.9998,Highly recommend this brand.
+Clothing,Zenith,arrived / customer / helpful,positive,31,3.419,0.9986,Customer service was helpful.
+Beauty,Zenith,arrived / customer / helpful,positive,31,3.613,0.9988,Customer service was helpful.
+Books,Acme,arrived / customer / helpful,positive,31,3.581,0.9989,Customer service was helpful.
+Groceries,Harbor,arrived / customer / helpful,positive,31,3.581,0.9989,Customer service was helpful.
+Home & Kitchen,Solace,arrived / customer / helpful,positive,31,3.613,0.9989,Customer service was helpful.
+Sports,Nimbus,arrived / customer / helpful,positive,31,3.871,0.999,Customer service was helpful.
+Pet Supplies,Everest,arrived / customer / helpful,positive,31,3.645,0.999,Customer service was helpful.
+Beauty,Pulse,product / highly / brand,positive,31,3.484,0.9998,Decent product for the price.
+Clothing,Harbor,color / quality / poor,negative,30,3.467,-0.9996,"Not as expected, quality is poor."
+Clothing,NeoTech,arrived / customer / helpful,positive,30,3.767,0.9988,Customer service was helpful.
+Electronics,Willow,arrived / customer / helpful,positive,30,3.667,0.999,Customer service was helpful.
+Clothing,Everest,arrived / customer / helpful,positive,30,3.467,0.9991,Customer service was helpful.
+Automotive,Acme,product / highly / brand,positive,30,3.367,0.9998,"Excellent product, will buy again."
+Automotive,GreenLeaf,product / highly / brand,positive,30,3.333,0.9998,Decent product for the price.
+Toys,Orion,product / highly / brand,positive,30,3.667,0.9998,"Excellent product, will buy again."
+Clothing,Astra,product / highly / brand,positive,30,3.633,0.9998,"Excellent product, will buy again."
+Sports,Everest,product / highly / brand,positive,30,3.7,0.9998,Highly recommend this brand.
+Electronics,Harbor,product / highly / brand,positive,30,3.4,0.9998,"Excellent product, will buy again."
+Pet Supplies,NeoTech,arrived / customer / helpful,positive,29,3.345,0.9988,Fast shipping and good packaging.
+Pet Supplies,Pulse,arrived / customer / helpful,positive,29,3.759,0.9988,Customer service was helpful.
+Electronics,Pulse,arrived / customer / helpful,positive,29,3.793,0.9989,Fast shipping and good packaging.
+Beauty,GreenLeaf,arrived / customer / helpful,positive,29,3.517,0.9989,Customer service was helpful.
+Home & Kitchen,Everest,arrived / customer / helpful,positive,29,3.586,0.9989,Customer service was helpful.
+Books,Astra,product / highly / brand,positive,29,3.448,0.9998,Highly recommend this brand.
+Toys,Harbor,product / highly / brand,positive,29,3.586,0.9998,Decent product for the price.
+Electronics,NeoTech,product / highly / brand,positive,29,3.31,0.9998,Decent product for the price.
+Automotive,Solace,product / highly / brand,positive,29,3.69,0.9998,Highly recommend this brand.
+Groceries,Harbor,product / highly / brand,positive,29,3.793,0.9998,"Excellent product, will buy again."
+Automotive,Zenith,product / highly / brand,positive,29,3.517,0.9998,Decent product for the price.
+Home & Kitchen,Pulse,product / highly / brand,positive,29,3.759,0.9998,Highly recommend this brand.
+Books,Everest,product / highly / brand,positive,29,3.828,0.9999,Highly recommend this brand.
+Books,Nimbus,color / quality / poor,positive,28,3.643,0.9945,Color was different from images.
+Groceries,GreenLeaf,arrived / customer / helpful,positive,28,3.929,0.9986,Customer service was helpful.
+Automotive,GreenLeaf,arrived / customer / helpful,positive,28,3.5,0.9988,Customer service was helpful.
+Beauty,Harbor,arrived / customer / helpful,positive,28,3.536,0.9988,Fast shipping and good packaging.
+Home & Kitchen,NeoTech,arrived / customer / helpful,positive,28,3.857,0.999,Fast shipping and good packaging.
+Toys,Harbor,arrived / customer / helpful,positive,28,3.429,0.9991,Customer service was helpful.
+Sports,Astra,product / highly / brand,positive,28,3.643,0.9998,"Excellent product, will buy again."
+Automotive,Orion,product / highly / brand,positive,28,3.607,0.9998,Decent product for the price.
+Groceries,Everest,product / highly / brand,positive,28,3.714,0.9998,"Excellent product, will buy again."
+Sports,Willow,product / highly / brand,positive,28,3.571,0.9998,Highly recommend this brand.
+Toys,Willow,product / highly / brand,positive,28,3.5,0.9998,Highly recommend this brand.
+Home & Kitchen,Astra,product / highly / brand,positive,28,3.429,0.9998,Highly recommend this brand.
+Clothing,GreenLeaf,color / quality / poor,positive,27,3.259,0.9945,Color was different from images.
+Sports,Harbor,arrived / customer / helpful,positive,27,3.926,0.9989,Customer service was helpful.
+Groceries,Orion,arrived / customer / helpful,positive,27,3.593,0.999,Fast shipping and good packaging.
+Pet Supplies,Solace,arrived / customer / helpful,positive,27,3.259,0.999,Customer service was helpful.
+Home & Kitchen,GreenLeaf,arrived / customer / helpful,positive,27,3.37,0.9991,Customer service was helpful.
+Pet Supplies,Harbor,arrived / customer / helpful,positive,27,3.407,0.9991,Fast shipping and good packaging.
+Electronics,Solace,product / highly / brand,positive,27,3.296,0.9998,"Excellent product, will buy again."
+Groceries,Pulse,product / highly / brand,positive,27,3.37,0.9998,Decent product for the price.
+Clothing,Harbor,color / quality / poor,positive,26,3.423,0.9945,Color was different from images.
+Beauty,Astra,arrived / customer / helpful,positive,26,3.731,0.9989,Fast shipping and good packaging.
+Books,Zenith,arrived / customer / helpful,positive,26,3.962,0.999,Customer service was helpful.
+Home & Kitchen,Harbor,arrived / customer / helpful,positive,26,3.346,0.999,Customer service was helpful.
+Automotive,Acme,arrived / customer / helpful,positive,26,3.885,0.9993,Customer service was helpful.
+Books,Solace,product / highly / brand,positive,26,3.577,0.9998,"Excellent product, will buy again."
+Pet Supplies,Acme,product / highly / brand,positive,26,3.577,0.9998,"Excellent product, will buy again."
+Sports,Orion,product / highly / brand,positive,26,3.577,0.9998,Highly recommend this brand.
+Electronics,GreenLeaf,works / perfectly / helpful,positive,26,3.885,0.9999,Works perfectly!
+Pet Supplies,Zenith,works / perfectly / helpful,positive,26,3.654,0.9999,Works perfectly!
+Home & Kitchen,Nimbus,color / quality / poor,negative,25,3.8,-0.9996,"Not as expected, quality is poor."
+Automotive,Willow,arrived / customer / helpful,negative,25,3.32,-0.9992,Item arrived damaged.
+Home & Kitchen,NeoTech,arrived / customer / helpful,negative,25,3.68,-0.9992,Item arrived damaged.
+Electronics,Zenith,arrived / customer / helpful,positive,25,3.68,0.9988,Fast shipping and good packaging.
+Groceries,Acme,arrived / customer / helpful,positive,25,3.88,0.999,Fast shipping and good packaging.
+Automotive,Harbor,arrived / customer / helpful,positive,25,3.6,0.9991,Fast shipping and good packaging.
+Sports,Willow,arrived / customer / helpful,positive,25,3.4,0.9991,Fast shipping and good packaging.
+Books,NeoTech,arrived / customer / helpful,positive,25,3.4,0.9992,Customer service was helpful.
+Home & Kitchen,Acme,product / highly / brand,positive,25,3.64,0.9998,Highly recommend this brand.
+Electronics,Astra,arrived / customer / helpful,positive,24,3.417,0.9986,Customer service was helpful.
+Groceries,Everest,arrived / customer / helpful,positive,24,3.333,0.9987,Customer service was helpful.
+Groceries,Astra,arrived / customer / helpful,positive,24,3.083,0.9987,Customer service was helpful.
+Electronics,Solace,arrived / customer / helpful,positive,24,3.667,0.9988,Customer service was helpful.
+Beauty,Pulse,arrived / customer / helpful,positive,24,3.667,0.9989,Customer service was helpful.
+Clothing,Acme,arrived / customer / helpful,positive,24,3.583,0.999,Fast shipping and good packaging.
+Automotive,Solace,arrived / customer / helpful,positive,24,3.75,0.9992,Fast shipping and good packaging.
+Electronics,Harbor,arrived / customer / helpful,positive,24,3.5,0.9992,Customer service was helpful.
+Beauty,NeoTech,product / highly / brand,positive,24,3.25,0.9998,Decent product for the price.
+Pet Supplies,Nimbus,product / highly / brand,positive,24,3.75,0.9998,"Excellent product, will buy again."
+Automotive,Pulse,product / highly / brand,positive,24,3.208,0.9998,"Excellent product, will buy again."
+Beauty,Acme,product / highly / brand,positive,24,3.792,0.9998,Highly recommend this brand.
+Clothing,Everest,color / quality / poor,negative,23,3.391,-0.9996,"Not as expected, quality is poor."
+Clothing,GreenLeaf,arrived / customer / helpful,negative,23,3.391,-0.9992,Item arrived damaged.
+Automotive,Willow,color / quality / poor,positive,23,3.522,0.9945,Color was different from images.
+Books,Astra,money / value / works,positive,23,3.087,0.9977,Value for money.
+Toys,Acme,arrived / customer / helpful,positive,23,3.174,0.9987,Customer service was helpful.
+Sports,Orion,arrived / customer / helpful,positive,23,3.696,0.9988,Customer service was helpful.
+Books,Harbor,arrived / customer / helpful,positive,23,3.565,0.9988,Fast shipping and good packaging.
+Clothing,Solace,arrived / customer / helpful,positive,23,3.478,0.9988,Fast shipping and good packaging.
+Books,Orion,arrived / customer / helpful,positive,23,4.087,0.999,Fast shipping and good packaging.
+Toys,Astra,arrived / customer / helpful,positive,23,3.913,0.999,Fast shipping and good packaging.
+Home & Kitchen,Orion,arrived / customer / helpful,positive,23,3.696,0.9991,Customer service was helpful.
+Electronics,GreenLeaf,arrived / customer / helpful,positive,23,3.348,0.9991,Fast shipping and good packaging.
+Clothing,Nimbus,product / highly / brand,positive,23,3.609,0.9998,Highly recommend this brand.
+Sports,Pulse,product / highly / brand,positive,23,3.609,0.9998,Decent product for the price.
+Toys,Nimbus,color / quality / poor,negative,22,3.5,-0.9996,"Not as expected, quality is poor."
+Toys,Zenith,color / quality / poor,negative,22,3.455,-0.9996,"Not as expected, quality is poor."
+Clothing,Willow,arrived / customer / helpful,negative,22,3.682,-0.9992,Item arrived damaged.
+Toys,Zenith,arrived / customer / helpful,negative,22,4.045,-0.9992,Item arrived damaged.
+Clothing,Everest,money / value / works,positive,22,3.682,0.9977,Value for money.
+Toys,GreenLeaf,arrived / customer / helpful,positive,22,3.909,0.9989,Fast shipping and good packaging.
+Sports,Solace,arrived / customer / helpful,positive,22,3.727,0.9992,Fast shipping and good packaging.
+Groceries,Solace,product / highly / brand,positive,22,3.636,0.9998,Highly recommend this brand.
+Clothing,Orion,color / quality / poor,negative,21,3.524,-0.9996,"Not as expected, quality is poor."
+Clothing,Zenith,color / quality / poor,negative,21,3.286,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Zenith,color / quality / poor,negative,21,3.524,-0.9996,"Not as expected, quality is poor."
+Beauty,Solace,arrived / customer / helpful,negative,21,3.571,-0.9992,Item arrived damaged.
+Electronics,Harbor,arrived / customer / helpful,negative,21,3.714,-0.9992,Item arrived damaged.
+Sports,Nimbus,arrived / customer / helpful,negative,21,3.619,-0.9992,Item arrived damaged.
+Pet Supplies,Zenith,color / quality / poor,positive,21,3.381,0.9945,Color was different from images.
+Toys,Nimbus,color / quality / poor,positive,21,3.333,0.9945,Color was different from images.
+Clothing,GreenLeaf,money / value / works,positive,21,3.905,0.9977,Value for money.
+Pet Supplies,Astra,money / value / works,positive,21,3.905,0.9977,Value for money.
+Toys,Nimbus,money / value / works,positive,21,3.619,0.9977,Value for money.
+Books,Astra,arrived / customer / helpful,positive,21,3.143,0.9987,Customer service was helpful.
+Automotive,Astra,arrived / customer / helpful,positive,21,3.524,0.9987,Customer service was helpful.
+Home & Kitchen,Nimbus,arrived / customer / helpful,positive,21,3.0,0.9988,Customer service was helpful.
+Automotive,Pulse,arrived / customer / helpful,positive,21,3.857,0.999,Customer service was helpful.
+Automotive,Everest,arrived / customer / helpful,positive,21,3.571,0.9992,Fast shipping and good packaging.
+Clothing,Harbor,works / perfectly / helpful,positive,21,3.571,0.9999,Works perfectly!
+Automotive,Orion,arrived / customer / helpful,negative,20,3.9,-0.9992,Item arrived damaged.
+Clothing,Harbor,arrived / customer / helpful,negative,20,3.75,-0.9992,Item arrived damaged.
+Clothing,Everest,color / quality / poor,positive,20,3.4,0.9945,Color was different from images.
+Toys,Pulse,color / quality / poor,positive,20,3.65,0.9945,Color was different from images.
+Beauty,Everest,money / value / works,positive,20,3.65,0.9977,Value for money.
+Clothing,Orion,money / value / works,positive,20,4.0,0.9977,Value for money.
+Toys,Astra,money / value / works,positive,20,3.45,0.9977,Value for money.
+Toys,Zenith,money / value / works,positive,20,3.55,0.9977,Value for money.
+Automotive,NeoTech,arrived / customer / helpful,positive,20,3.25,0.999,Customer service was helpful.
+Pet Supplies,Nimbus,arrived / customer / helpful,positive,20,3.9,0.999,Fast shipping and good packaging.
+Toys,Everest,arrived / customer / helpful,positive,20,3.55,0.999,Customer service was helpful.
+Beauty,Orion,arrived / customer / helpful,positive,20,3.65,0.999,Fast shipping and good packaging.
+Groceries,Pulse,arrived / customer / helpful,positive,20,3.7,0.9992,Fast shipping and good packaging.
+Books,Pulse,product / highly / brand,positive,20,3.75,0.9998,"Excellent product, will buy again."
+Electronics,Orion,works / perfectly / helpful,positive,20,3.55,0.9999,Works perfectly!
+Sports,Harbor,works / perfectly / helpful,positive,20,3.7,0.9999,Works perfectly!
+Toys,Nimbus,works / perfectly / helpful,positive,20,3.9,0.9999,Works perfectly!
+Home & Kitchen,Solace,arrived / customer / helpful,negative,19,3.526,-0.9992,Item arrived damaged.
+Pet Supplies,Willow,arrived / customer / helpful,negative,19,3.474,-0.9992,Item arrived damaged.
+Toys,NeoTech,arrived / customer / helpful,negative,19,3.632,-0.9992,Item arrived damaged.
+Beauty,Zenith,money / value / works,positive,19,3.421,0.9977,Value for money.
+Books,Nimbus,money / value / works,positive,19,3.053,0.9977,Value for money.
+Books,Orion,money / value / works,positive,19,3.579,0.9977,Value for money.
+Books,Zenith,money / value / works,positive,19,3.474,0.9977,Value for money.
+Automotive,Zenith,arrived / customer / helpful,positive,19,3.368,0.9987,Customer service was helpful.
+Clothing,Astra,arrived / customer / helpful,positive,19,3.474,0.9987,Customer service was helpful.
+Electronics,Nimbus,arrived / customer / helpful,positive,19,2.842,0.9987,Customer service was helpful.
+Automotive,Nimbus,arrived / customer / helpful,positive,19,3.158,0.9988,Customer service was helpful.
+Groceries,Nimbus,arrived / customer / helpful,positive,19,3.316,0.9989,Fast shipping and good packaging.
+Sports,NeoTech,arrived / customer / helpful,positive,19,3.526,0.9989,Customer service was helpful.
+Beauty,NeoTech,arrived / customer / helpful,positive,19,3.526,0.999,Customer service was helpful.
+Books,Willow,arrived / customer / helpful,positive,19,3.632,0.999,Fast shipping and good packaging.
+Electronics,Acme,arrived / customer / helpful,positive,19,3.737,0.9992,Fast shipping and good packaging.
+Clothing,Pulse,product / highly / brand,positive,19,3.526,0.9998,Decent product for the price.
+Sports,GreenLeaf,product / highly / brand,positive,19,3.895,0.9998,"Excellent product, will buy again."
+Automotive,Willow,works / perfectly / helpful,positive,19,3.474,0.9999,Works perfectly!
+Beauty,Willow,works / perfectly / helpful,positive,19,3.579,0.9999,Works perfectly!
+Beauty,Astra,color / quality / poor,negative,18,4.111,-0.9996,"Not as expected, quality is poor."
+Beauty,Zenith,color / quality / poor,negative,18,3.556,-0.9996,"Not as expected, quality is poor."
+Books,Nimbus,color / quality / poor,negative,18,3.0,-0.9996,"Not as expected, quality is poor."
+Books,Orion,color / quality / poor,negative,18,3.667,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Willow,color / quality / poor,negative,18,3.833,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Astra,color / quality / poor,negative,18,3.389,-0.9996,"Not as expected, quality is poor."
+Automotive,Harbor,arrived / customer / helpful,negative,18,3.444,-0.9992,Item arrived damaged.
+Books,Nimbus,arrived / customer / helpful,negative,18,3.167,-0.9992,Item arrived damaged.
+Clothing,Everest,arrived / customer / helpful,negative,18,3.833,-0.9992,Item arrived damaged.
+Electronics,Willow,arrived / customer / helpful,negative,18,3.444,-0.9992,Item arrived damaged.
+Beauty,Orion,color / quality / poor,positive,18,3.333,0.9945,Color was different from images.
+Clothing,Zenith,color / quality / poor,positive,18,3.444,0.9945,Color was different from images.
+Electronics,Acme,color / quality / poor,positive,18,3.833,0.9945,Color was different from images.
+Home & Kitchen,Everest,color / quality / poor,positive,18,3.222,0.9945,Color was different from images.
+Home & Kitchen,GreenLeaf,color / quality / poor,positive,18,3.278,0.9945,Color was different from images.
+Home & Kitchen,Solace,color / quality / poor,positive,18,3.611,0.9945,Color was different from images.
+Sports,Harbor,color / quality / poor,positive,18,3.944,0.9945,Color was different from images.
+Books,GreenLeaf,money / value / works,positive,18,3.778,0.9977,Value for money.
+Clothing,Harbor,money / value / works,positive,18,3.667,0.9977,Value for money.
+Groceries,NeoTech,money / value / works,positive,18,3.889,0.9977,Value for money.
+Groceries,Willow,arrived / customer / helpful,positive,18,3.167,0.9988,Customer service was helpful.
+Books,Everest,arrived / customer / helpful,positive,18,3.833,0.9989,Customer service was helpful.
+Books,Solace,arrived / customer / helpful,positive,18,3.667,0.9989,Customer service was helpful.
+Toys,Willow,arrived / customer / helpful,positive,18,3.778,0.9989,Fast shipping and good packaging.
+Pet Supplies,Willow,arrived / customer / helpful,positive,18,4.0,0.999,Customer service was helpful.
+Groceries,Solace,arrived / customer / helpful,positive,18,3.556,0.9991,Customer service was helpful.
+Home & Kitchen,GreenLeaf,product / highly / brand,positive,18,3.667,0.9998,Decent product for the price.
+Beauty,Orion,works / perfectly / helpful,positive,18,4.0,0.9999,Works perfectly!
+Clothing,Everest,works / perfectly / helpful,positive,18,3.167,0.9999,Works perfectly!
+Electronics,Willow,works / perfectly / helpful,positive,18,3.333,0.9999,Works perfectly!
+Home & Kitchen,GreenLeaf,works / perfectly / helpful,positive,18,3.278,0.9999,Works perfectly!
+Home & Kitchen,Zenith,works / perfectly / helpful,positive,18,3.444,0.9999,Works perfectly!
+Automotive,Willow,color / quality / poor,negative,17,3.118,-0.9996,"Not as expected, quality is poor."
+Beauty,Solace,color / quality / poor,negative,17,3.412,-0.9996,"Not as expected, quality is poor."
+Beauty,Willow,color / quality / poor,negative,17,3.235,-0.9996,"Not as expected, quality is poor."
+Electronics,Orion,color / quality / poor,negative,17,3.353,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Solace,color / quality / poor,negative,17,3.882,-0.9996,"Not as expected, quality is poor."
+Beauty,Orion,arrived / customer / helpful,negative,17,3.765,-0.9992,Item arrived damaged.
+Home & Kitchen,Everest,arrived / customer / helpful,negative,17,3.353,-0.9992,Item arrived damaged.
+Toys,Acme,arrived / customer / helpful,negative,17,3.941,-0.9992,Item arrived damaged.
+Toys,Astra,arrived / customer / helpful,negative,17,3.529,-0.9992,Item arrived damaged.
+Automotive,Solace,color / quality / poor,positive,17,3.353,0.9945,Color was different from images.
+Beauty,Solace,color / quality / poor,positive,17,3.529,0.9945,Color was different from images.
+Books,GreenLeaf,color / quality / poor,positive,17,3.059,0.9945,Color was different from images.
+Electronics,GreenLeaf,color / quality / poor,positive,17,3.647,0.9945,Color was different from images.
+Pet Supplies,Astra,color / quality / poor,positive,17,3.353,0.9945,Color was different from images.
+Sports,NeoTech,color / quality / poor,positive,17,3.647,0.9945,Color was different from images.
+Toys,NeoTech,color / quality / poor,positive,17,3.529,0.9945,Color was different from images.
+Beauty,Solace,money / value / works,positive,17,3.412,0.9977,Value for money.
+Books,Willow,money / value / works,positive,17,3.824,0.9977,Value for money.
+Electronics,Astra,money / value / works,positive,17,3.176,0.9977,Value for money.
+Electronics,Orion,money / value / works,positive,17,3.882,0.9977,Value for money.
+Groceries,Zenith,money / value / works,positive,17,4.118,0.9977,Value for money.
+Home & Kitchen,Everest,money / value / works,positive,17,3.176,0.9977,Value for money.
+Pet Supplies,Harbor,money / value / works,positive,17,3.235,0.9977,Value for money.
+Toys,Pulse,money / value / works,positive,17,3.118,0.9977,Value for money.
+Clothing,Willow,arrived / customer / helpful,positive,17,3.294,0.9987,Customer service was helpful.
+Home & Kitchen,Acme,arrived / customer / helpful,positive,17,3.412,0.9988,Customer service was helpful.
+Pet Supplies,Acme,arrived / customer / helpful,positive,17,3.059,0.9988,Customer service was helpful.
+Toys,Solace,arrived / customer / helpful,positive,17,3.235,0.9988,Fast shipping and good packaging.
+Home & Kitchen,Willow,arrived / customer / helpful,positive,17,3.176,0.999,Customer service was helpful.
+Sports,Everest,arrived / customer / helpful,positive,17,3.471,0.999,Fast shipping and good packaging.
+Electronics,Everest,product / highly / brand,positive,17,3.647,0.9998,Highly recommend this brand.
+Groceries,Willow,product / highly / brand,positive,17,3.588,0.9998,"Excellent product, will buy again."
+Books,GreenLeaf,works / perfectly / helpful,positive,17,3.529,0.9999,Works perfectly!
+Clothing,Willow,works / perfectly / helpful,positive,17,3.647,0.9999,Works perfectly!
+Clothing,Zenith,works / perfectly / helpful,positive,17,3.529,0.9999,Works perfectly!
+Electronics,Acme,works / perfectly / helpful,positive,17,3.706,0.9999,Works perfectly!
+Groceries,GreenLeaf,works / perfectly / helpful,positive,17,3.353,0.9999,Works perfectly!
+Beauty,Orion,color / quality / poor,negative,16,3.438,-0.9996,"Not as expected, quality is poor."
+Books,Pulse,color / quality / poor,negative,16,3.188,-0.9996,"Not as expected, quality is poor."
+Books,Zenith,color / quality / poor,negative,16,3.375,-0.9996,"Not as expected, quality is poor."
+Groceries,Everest,color / quality / poor,negative,16,3.188,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Astra,color / quality / poor,negative,16,3.5,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Acme,color / quality / poor,negative,16,3.625,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Harbor,color / quality / poor,negative,16,3.562,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Willow,color / quality / poor,negative,16,3.562,-0.9996,"Not as expected, quality is poor."
+Sports,Nimbus,color / quality / poor,negative,16,3.312,-0.9996,"Not as expected, quality is poor."
+Sports,Zenith,color / quality / poor,negative,16,3.5,-0.9996,"Not as expected, quality is poor."
+Toys,NeoTech,color / quality / poor,negative,16,3.5,-0.9996,"Not as expected, quality is poor."
+Automotive,Astra,arrived / customer / helpful,negative,16,3.625,-0.9992,Item arrived damaged.
+Beauty,Astra,arrived / customer / helpful,negative,16,3.375,-0.9992,Item arrived damaged.
+Electronics,Nimbus,arrived / customer / helpful,negative,16,3.25,-0.9992,Item arrived damaged.
+Groceries,Zenith,arrived / customer / helpful,negative,16,3.5,-0.9992,Item arrived damaged.
+Pet Supplies,Zenith,arrived / customer / helpful,negative,16,3.312,-0.9992,Item arrived damaged.
+Sports,Harbor,arrived / customer / helpful,negative,16,3.438,-0.9992,Item arrived damaged.
+Sports,Zenith,arrived / customer / helpful,negative,16,3.312,-0.9992,Item arrived damaged.
+Toys,Everest,arrived / customer / helpful,negative,16,3.875,-0.9992,Item arrived damaged.
+Beauty,Nimbus,color / quality / poor,positive,16,3.812,0.9945,Color was different from images.
+Beauty,Willow,color / quality / poor,positive,16,3.625,0.9945,Color was different from images.
+Beauty,Zenith,color / quality / poor,positive,16,3.25,0.9945,Color was different from images.
+Books,Harbor,color / quality / poor,positive,16,3.0,0.9945,Color was different from images.
+Clothing,NeoTech,color / quality / poor,positive,16,3.75,0.9945,Color was different from images.
+Clothing,Orion,color / quality / poor,positive,16,3.312,0.9945,Color was different from images.
+Groceries,Zenith,color / quality / poor,positive,16,3.312,0.9945,Color was different from images.
+Pet Supplies,Nimbus,color / quality / poor,positive,16,3.875,0.9945,Color was different from images.
+Sports,Nimbus,color / quality / poor,positive,16,3.125,0.9945,Color was different from images.
+Sports,Solace,color / quality / poor,positive,16,3.688,0.9945,Color was different from images.
+Toys,Zenith,color / quality / poor,positive,16,2.75,0.9945,Color was different from images.
+Automotive,Solace,money / value / works,positive,16,3.125,0.9977,Value for money.
+Electronics,Zenith,money / value / works,positive,16,3.688,0.9977,Value for money.
+Pet Supplies,Zenith,money / value / works,positive,16,3.562,0.9977,Value for money.
+Sports,Everest,money / value / works,positive,16,3.562,0.9977,Value for money.
+Sports,Nimbus,money / value / works,positive,16,3.625,0.9977,Value for money.
+Sports,Zenith,money / value / works,positive,16,3.312,0.9977,Value for money.
+Electronics,NeoTech,arrived / customer / helpful,positive,16,3.938,0.9986,Fast shipping and good packaging.
+Sports,GreenLeaf,arrived / customer / helpful,positive,16,3.375,0.9991,Fast shipping and good packaging.
+Books,Acme,works / perfectly / helpful,positive,16,3.938,0.9999,Works perfectly!
+Clothing,NeoTech,works / perfectly / helpful,positive,16,3.562,0.9999,Works perfectly!
+Pet Supplies,Everest,works / perfectly / helpful,positive,16,3.5,0.9999,Works perfectly!
+Pet Supplies,GreenLeaf,works / perfectly / helpful,positive,16,3.688,0.9999,Works perfectly!
+Pet Supplies,NeoTech,works / perfectly / helpful,positive,16,3.562,0.9999,Works perfectly!
+Sports,Zenith,works / perfectly / helpful,positive,16,3.625,0.9999,Works perfectly!
+Toys,Zenith,works / perfectly / helpful,positive,16,3.438,0.9999,Works perfectly!
+Books,Acme,color / quality / poor,negative,15,3.933,-0.9996,"Not as expected, quality is poor."
+Electronics,NeoTech,color / quality / poor,negative,15,3.533,-0.9996,"Not as expected, quality is poor."
+Groceries,NeoTech,color / quality / poor,negative,15,3.667,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Harbor,color / quality / poor,negative,15,3.733,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Everest,color / quality / poor,negative,15,3.733,-0.9996,"Not as expected, quality is poor."
+Sports,Acme,color / quality / poor,negative,15,3.267,-0.9996,"Not as expected, quality is poor."
+Sports,NeoTech,color / quality / poor,negative,15,3.467,-0.9996,"Not as expected, quality is poor."
+Beauty,GreenLeaf,arrived / customer / helpful,negative,15,3.0,-0.9992,Item arrived damaged.
+Books,Acme,arrived / customer / helpful,negative,15,3.2,-0.9992,Item arrived damaged.
+Clothing,NeoTech,arrived / customer / helpful,negative,15,4.267,-0.9992,Item arrived damaged.
+Clothing,Solace,arrived / customer / helpful,negative,15,3.667,-0.9992,Item arrived damaged.
+Clothing,Zenith,arrived / customer / helpful,negative,15,3.867,-0.9992,Item arrived damaged.
+Electronics,Orion,arrived / customer / helpful,negative,15,3.933,-0.9992,Item arrived damaged.
+Pet Supplies,Harbor,arrived / customer / helpful,negative,15,3.6,-0.9992,Item arrived damaged.
+Pet Supplies,Solace,arrived / customer / helpful,negative,15,3.133,-0.9992,Item arrived damaged.
+Toys,Orion,arrived / customer / helpful,negative,15,3.533,-0.9992,Item arrived damaged.
+Toys,Solace,arrived / customer / helpful,negative,15,3.467,-0.9992,Item arrived damaged.
+Automotive,Zenith,color / quality / poor,positive,15,3.733,0.9945,Color was different from images.
+Books,Astra,color / quality / poor,positive,15,3.267,0.9945,Color was different from images.
+Electronics,Nimbus,color / quality / poor,positive,15,2.733,0.9945,Color was different from images.
+Home & Kitchen,NeoTech,color / quality / poor,positive,15,3.8,0.9945,Color was different from images.
+Pet Supplies,NeoTech,color / quality / poor,positive,15,3.2,0.9945,Color was different from images.
+Sports,Zenith,color / quality / poor,positive,15,3.067,0.9945,Color was different from images.
+Toys,Astra,color / quality / poor,positive,15,3.533,0.9945,Color was different from images.
+Automotive,Willow,money / value / works,positive,15,3.8,0.9977,Value for money.
+Beauty,GreenLeaf,money / value / works,positive,15,3.733,0.9977,Value for money.
+Clothing,Willow,money / value / works,positive,15,3.6,0.9977,Value for money.
+Groceries,GreenLeaf,money / value / works,positive,15,2.867,0.9977,Value for money.
+Home & Kitchen,Nimbus,money / value / works,positive,15,3.067,0.9977,Value for money.
+Home & Kitchen,Orion,money / value / works,positive,15,3.467,0.9977,Value for money.
+Pet Supplies,Pulse,money / value / works,positive,15,3.533,0.9977,Value for money.
+Toys,Solace,money / value / works,positive,15,3.533,0.9977,Value for money.
+Home & Kitchen,Pulse,arrived / customer / helpful,positive,15,3.667,0.9989,Customer service was helpful.
+Sports,Acme,arrived / customer / helpful,positive,15,3.2,0.999,Fast shipping and good packaging.
+Automotive,Acme,works / perfectly / helpful,positive,15,3.4,0.9999,Works perfectly!
+Beauty,Astra,works / perfectly / helpful,positive,15,3.933,0.9999,Works perfectly!
+Beauty,Everest,works / perfectly / helpful,positive,15,3.2,0.9999,Works perfectly!
+Beauty,Pulse,works / perfectly / helpful,positive,15,3.267,0.9999,Works perfectly!
+Electronics,Pulse,works / perfectly / helpful,positive,15,3.2,0.9999,Works perfectly!
+Groceries,NeoTech,works / perfectly / helpful,positive,15,3.4,0.9999,Works perfectly!
+Sports,Acme,works / perfectly / helpful,positive,15,3.4,0.9999,Works perfectly!
+Automotive,Nimbus,color / quality / poor,negative,14,3.786,-0.9996,"Not as expected, quality is poor."
+Beauty,GreenLeaf,color / quality / poor,negative,14,3.929,-0.9996,"Not as expected, quality is poor."
+Books,GreenLeaf,color / quality / poor,negative,14,4.071,-0.9996,"Not as expected, quality is poor."
+Electronics,Pulse,color / quality / poor,negative,14,4.071,-0.9996,"Not as expected, quality is poor."
+Groceries,Orion,color / quality / poor,negative,14,4.0,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Zenith,color / quality / poor,negative,14,3.571,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Pulse,color / quality / poor,negative,14,3.071,-0.9996,"Not as expected, quality is poor."
+Sports,Everest,color / quality / poor,negative,14,3.214,-0.9996,"Not as expected, quality is poor."
+Sports,Harbor,color / quality / poor,negative,14,3.071,-0.9996,"Not as expected, quality is poor."
+Toys,Astra,color / quality / poor,negative,14,3.714,-0.9996,"Not as expected, quality is poor."
+Toys,Everest,color / quality / poor,negative,14,3.643,-0.9996,"Not as expected, quality is poor."
+Automotive,Nimbus,arrived / customer / helpful,negative,14,3.786,-0.9992,Item arrived damaged.
+Beauty,Acme,arrived / customer / helpful,negative,14,3.643,-0.9992,Item arrived damaged.
+Beauty,Everest,arrived / customer / helpful,negative,14,3.143,-0.9992,Item arrived damaged.
+Books,Astra,arrived / customer / helpful,negative,14,3.214,-0.9992,Item arrived damaged.
+Groceries,Acme,arrived / customer / helpful,negative,14,4.071,-0.9992,Item arrived damaged.
+Groceries,NeoTech,arrived / customer / helpful,negative,14,3.857,-0.9992,Item arrived damaged.
+Groceries,Pulse,arrived / customer / helpful,negative,14,3.571,-0.9992,Item arrived damaged.
+Pet Supplies,Everest,arrived / customer / helpful,negative,14,3.429,-0.9992,Item arrived damaged.
+Pet Supplies,NeoTech,arrived / customer / helpful,negative,14,3.143,-0.9992,Item arrived damaged.
+Sports,Everest,arrived / customer / helpful,negative,14,3.643,-0.9992,Item arrived damaged.
+Sports,NeoTech,arrived / customer / helpful,negative,14,3.214,-0.9992,Item arrived damaged.
+Toys,Harbor,arrived / customer / helpful,negative,14,3.429,-0.9992,Item arrived damaged.
+Toys,Nimbus,arrived / customer / helpful,negative,14,2.786,-0.9992,Item arrived damaged.
+Automotive,Everest,color / quality / poor,positive,14,3.429,0.9945,Color was different from images.
+Beauty,Harbor,color / quality / poor,positive,14,3.429,0.9945,Color was different from images.
+Electronics,Astra,color / quality / poor,positive,14,3.429,0.9945,Color was different from images.
+Electronics,Everest,color / quality / poor,positive,14,3.857,0.9945,Color was different from images.
+Electronics,Orion,color / quality / poor,positive,14,3.429,0.9945,Color was different from images.
+Electronics,Willow,color / quality / poor,positive,14,3.857,0.9945,Color was different from images.
+Home & Kitchen,Orion,color / quality / poor,positive,14,3.643,0.9945,Color was different from images.
+Pet Supplies,GreenLeaf,color / quality / poor,positive,14,3.214,0.9945,Color was different from images.
+Pet Supplies,Harbor,color / quality / poor,positive,14,4.071,0.9945,Color was different from images.
+Books,Harbor,money / value / works,positive,14,3.786,0.9977,Value for money.
+Clothing,NeoTech,money / value / works,positive,14,3.714,0.9977,Value for money.
+Electronics,Nimbus,money / value / works,positive,14,3.571,0.9977,Value for money.
+Electronics,Willow,money / value / works,positive,14,4.071,0.9977,Value for money.
+Groceries,Orion,money / value / works,positive,14,3.571,0.9977,Value for money.
+Sports,Acme,money / value / works,positive,14,3.714,0.9977,Value for money.
+Sports,Harbor,money / value / works,positive,14,3.429,0.9977,Value for money.
+Books,Pulse,arrived / customer / helpful,positive,14,3.429,0.9986,Customer service was helpful.
+Clothing,Pulse,arrived / customer / helpful,positive,14,3.786,0.999,Fast shipping and good packaging.
+Electronics,Everest,arrived / customer / helpful,positive,14,3.357,0.999,Customer service was helpful.
+Automotive,Orion,arrived / customer / helpful,positive,14,3.929,0.9992,Customer service was helpful.
+Automotive,GreenLeaf,works / perfectly / helpful,positive,14,3.571,0.9999,Works perfectly!
+Automotive,Nimbus,works / perfectly / helpful,positive,14,3.214,0.9999,Works perfectly!
+Beauty,Nimbus,works / perfectly / helpful,positive,14,3.786,0.9999,Works perfectly!
+Electronics,Nimbus,works / perfectly / helpful,positive,14,3.571,0.9999,Works perfectly!
+Groceries,Acme,works / perfectly / helpful,positive,14,3.5,0.9999,Works perfectly!
+Groceries,Pulse,works / perfectly / helpful,positive,14,4.071,0.9999,Works perfectly!
+Home & Kitchen,NeoTech,works / perfectly / helpful,positive,14,3.429,0.9999,Works perfectly!
+Pet Supplies,Harbor,works / perfectly / helpful,positive,14,3.357,0.9999,Works perfectly!
+Pet Supplies,Orion,works / perfectly / helpful,positive,14,3.5,0.9999,Works perfectly!
+Automotive,Astra,color / quality / poor,negative,13,3.923,-0.9996,"Not as expected, quality is poor."
+Beauty,Everest,color / quality / poor,negative,13,3.385,-0.9996,"Not as expected, quality is poor."
+Books,Astra,color / quality / poor,negative,13,3.077,-0.9996,"Not as expected, quality is poor."
+Clothing,Astra,color / quality / poor,negative,13,3.692,-0.9996,"Not as expected, quality is poor."
+Clothing,NeoTech,color / quality / poor,negative,13,3.923,-0.9996,"Not as expected, quality is poor."
+Clothing,Willow,color / quality / poor,negative,13,3.462,-0.9996,"Not as expected, quality is poor."
+Electronics,Acme,color / quality / poor,negative,13,3.615,-0.9996,"Not as expected, quality is poor."
+Electronics,Astra,color / quality / poor,negative,13,3.769,-0.9996,"Not as expected, quality is poor."
+Electronics,GreenLeaf,color / quality / poor,negative,13,3.923,-0.9996,"Not as expected, quality is poor."
+Electronics,Solace,color / quality / poor,negative,13,3.615,-0.9996,"Not as expected, quality is poor."
+Groceries,Acme,color / quality / poor,negative,13,4.0,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Acme,color / quality / poor,negative,13,4.0,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Pulse,color / quality / poor,negative,13,3.769,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,NeoTech,color / quality / poor,negative,13,3.385,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Solace,color / quality / poor,negative,13,3.462,-0.9996,"Not as expected, quality is poor."
+Toys,Orion,color / quality / poor,negative,13,3.846,-0.9996,"Not as expected, quality is poor."
+Toys,Solace,color / quality / poor,negative,13,3.462,-0.9996,"Not as expected, quality is poor."
+Automotive,Solace,arrived / customer / helpful,negative,13,3.231,-0.9992,Item arrived damaged.
+Beauty,Nimbus,arrived / customer / helpful,negative,13,3.846,-0.9992,Item arrived damaged.
+Beauty,Willow,arrived / customer / helpful,negative,13,3.538,-0.9992,Item arrived damaged.
+Books,GreenLeaf,arrived / customer / helpful,negative,13,3.077,-0.9992,Item arrived damaged.
+Books,NeoTech,arrived / customer / helpful,negative,13,3.923,-0.9992,Item arrived damaged.
+Electronics,Astra,arrived / customer / helpful,negative,13,3.0,-0.9992,Item arrived damaged.
+Electronics,Zenith,arrived / customer / helpful,negative,13,3.462,-0.9992,Item arrived damaged.
+Groceries,Solace,arrived / customer / helpful,negative,13,3.077,-0.9992,Item arrived damaged.
+Pet Supplies,Astra,arrived / customer / helpful,negative,13,3.231,-0.9992,Item arrived damaged.
+Sports,Acme,arrived / customer / helpful,negative,13,3.846,-0.9992,Item arrived damaged.
+Beauty,GreenLeaf,color / quality / poor,positive,13,3.923,0.9945,Color was different from images.
+Books,Everest,color / quality / poor,positive,13,3.769,0.9945,Color was different from images.
+Books,Willow,color / quality / poor,positive,13,3.615,0.9945,Color was different from images.
+Home & Kitchen,Nimbus,color / quality / poor,positive,13,3.385,0.9945,Color was different from images.
+Sports,GreenLeaf,color / quality / poor,positive,13,3.231,0.9945,Color was different from images.
+Toys,GreenLeaf,color / quality / poor,positive,13,3.538,0.9945,Color was different from images.
+Automotive,Acme,money / value / works,positive,13,3.462,0.9977,Value for money.
+Beauty,Astra,money / value / works,positive,13,3.462,0.9977,Value for money.
+Electronics,Solace,money / value / works,positive,13,3.154,0.9977,Value for money.
+Groceries,Everest,money / value / works,positive,13,3.462,0.9977,Value for money.
+Home & Kitchen,Harbor,money / value / works,positive,13,3.692,0.9977,Value for money.
+Home & Kitchen,Pulse,money / value / works,positive,13,3.308,0.9977,Value for money.
+Home & Kitchen,Solace,money / value / works,positive,13,3.923,0.9977,Value for money.
+Home & Kitchen,Zenith,money / value / works,positive,13,3.615,0.9977,Value for money.
+Pet Supplies,GreenLeaf,money / value / works,positive,13,3.769,0.9977,Value for money.
+Pet Supplies,NeoTech,money / value / works,positive,13,3.615,0.9977,Value for money.
+Pet Supplies,Nimbus,money / value / works,positive,13,3.538,0.9977,Value for money.
+Pet Supplies,Willow,money / value / works,positive,13,3.077,0.9977,Value for money.
+Sports,NeoTech,money / value / works,positive,13,3.231,0.9977,Value for money.
+Toys,Harbor,money / value / works,positive,13,3.462,0.9977,Value for money.
+Sports,Pulse,arrived / customer / helpful,positive,13,3.615,0.9989,Customer service was helpful.
+Automotive,Zenith,works / perfectly / helpful,positive,13,3.615,0.9999,Works perfectly!
+Beauty,Acme,works / perfectly / helpful,positive,13,3.769,0.9999,Works perfectly!
+Beauty,Solace,works / perfectly / helpful,positive,13,3.846,0.9999,Works perfectly!
+Books,Harbor,works / perfectly / helpful,positive,13,3.692,0.9999,Works perfectly!
+Home & Kitchen,Everest,works / perfectly / helpful,positive,13,3.615,0.9999,Works perfectly!
+Home & Kitchen,Solace,works / perfectly / helpful,positive,13,3.154,0.9999,Works perfectly!
+Sports,Nimbus,works / perfectly / helpful,positive,13,3.692,0.9999,Works perfectly!
+Toys,Acme,works / perfectly / helpful,positive,13,3.692,0.9999,Works perfectly!
+Toys,Astra,works / perfectly / helpful,positive,13,3.308,0.9999,Works perfectly!
+Toys,GreenLeaf,works / perfectly / helpful,positive,13,3.769,0.9999,Works perfectly!
+Toys,NeoTech,works / perfectly / helpful,positive,13,4.077,0.9999,Works perfectly!
+Automotive,Everest,color / quality / poor,negative,12,3.417,-0.9996,"Not as expected, quality is poor."
+Beauty,NeoTech,color / quality / poor,negative,12,3.167,-0.9996,"Not as expected, quality is poor."
+Beauty,Nimbus,color / quality / poor,negative,12,3.833,-0.9996,"Not as expected, quality is poor."
+Books,Harbor,color / quality / poor,negative,12,3.5,-0.9996,"Not as expected, quality is poor."
+Clothing,Acme,color / quality / poor,negative,12,3.0,-0.9996,"Not as expected, quality is poor."
+Groceries,GreenLeaf,color / quality / poor,negative,12,3.417,-0.9996,"Not as expected, quality is poor."
+Groceries,Pulse,color / quality / poor,negative,12,3.0,-0.9996,"Not as expected, quality is poor."
+Sports,Pulse,color / quality / poor,negative,12,3.75,-0.9996,"Not as expected, quality is poor."
+Automotive,Everest,arrived / customer / helpful,negative,12,3.417,-0.9992,Item arrived damaged.
+Books,Solace,arrived / customer / helpful,negative,12,3.583,-0.9992,Item arrived damaged.
+Books,Zenith,arrived / customer / helpful,negative,12,3.417,-0.9992,Item arrived damaged.
+Clothing,Orion,arrived / customer / helpful,negative,12,3.75,-0.9992,Item arrived damaged.
+Electronics,GreenLeaf,arrived / customer / helpful,negative,12,3.667,-0.9992,Item arrived damaged.
+Groceries,Orion,arrived / customer / helpful,negative,12,3.083,-0.9992,Item arrived damaged.
+Sports,Astra,arrived / customer / helpful,negative,12,4.167,-0.9992,Item arrived damaged.
+Sports,Solace,arrived / customer / helpful,negative,12,3.417,-0.9992,Item arrived damaged.
+Toys,Pulse,arrived / customer / helpful,negative,12,3.25,-0.9992,Item arrived damaged.
+Automotive,Nimbus,color / quality / poor,positive,12,3.667,0.9945,Color was different from images.
+Beauty,Acme,color / quality / poor,positive,12,3.5,0.9945,Color was different from images.
+Beauty,Astra,color / quality / poor,positive,12,3.25,0.9945,Color was different from images.
+Beauty,NeoTech,color / quality / poor,positive,12,2.75,0.9945,Color was different from images.
+Books,Orion,color / quality / poor,positive,12,3.5,0.9945,Color was different from images.
+Electronics,Solace,color / quality / poor,positive,12,3.167,0.9945,Color was different from images.
+Groceries,Acme,color / quality / poor,positive,12,3.333,0.9945,Color was different from images.
+Pet Supplies,Willow,color / quality / poor,positive,12,3.75,0.9945,Color was different from images.
+Toys,Everest,color / quality / poor,positive,12,3.5,0.9945,Color was different from images.
+Toys,Solace,color / quality / poor,positive,12,3.833,0.9945,Color was different from images.
+Beauty,Orion,money / value / works,positive,12,4.0,0.9977,Value for money.
+Books,NeoTech,money / value / works,positive,12,3.667,0.9977,Value for money.
+Clothing,Zenith,money / value / works,positive,12,3.667,0.9977,Value for money.
+Groceries,Harbor,money / value / works,positive,12,3.5,0.9977,Value for money.
+Home & Kitchen,NeoTech,money / value / works,positive,12,3.833,0.9977,Value for money.
+Sports,Astra,arrived / customer / helpful,positive,12,3.583,0.999,Customer service was helpful.
+Automotive,Astra,works / perfectly / helpful,positive,12,3.083,0.9999,Works perfectly!
+Beauty,GreenLeaf,works / perfectly / helpful,positive,12,3.417,0.9999,Works perfectly!
+Beauty,NeoTech,works / perfectly / helpful,positive,12,3.083,0.9999,Works perfectly!
+Beauty,Zenith,works / perfectly / helpful,positive,12,3.667,0.9999,Works perfectly!
+Books,Solace,works / perfectly / helpful,positive,12,4.25,0.9999,Works perfectly!
+Pet Supplies,Astra,works / perfectly / helpful,positive,12,3.917,0.9999,Works perfectly!
+Toys,Everest,works / perfectly / helpful,positive,12,3.583,0.9999,Works perfectly!
+Toys,Pulse,works / perfectly / helpful,positive,12,2.833,0.9999,Works perfectly!
+Toys,Solace,works / perfectly / helpful,positive,12,3.417,0.9999,Works perfectly!
+Toys,Willow,works / perfectly / helpful,positive,12,3.75,0.9999,Works perfectly!
+Automotive,Pulse,color / quality / poor,negative,11,3.091,-0.9996,"Not as expected, quality is poor."
+Automotive,Solace,color / quality / poor,negative,11,3.727,-0.9996,"Not as expected, quality is poor."
+Beauty,Pulse,color / quality / poor,negative,11,2.909,-0.9996,"Not as expected, quality is poor."
+Books,Everest,color / quality / poor,negative,11,4.091,-0.9996,"Not as expected, quality is poor."
+Electronics,Nimbus,color / quality / poor,negative,11,3.727,-0.9996,"Not as expected, quality is poor."
+Electronics,Zenith,color / quality / poor,negative,11,3.364,-0.9996,"Not as expected, quality is poor."
+Groceries,Astra,color / quality / poor,negative,11,3.455,-0.9996,"Not as expected, quality is poor."
+Groceries,Zenith,color / quality / poor,negative,11,3.909,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Everest,color / quality / poor,negative,11,3.273,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Nimbus,color / quality / poor,negative,11,3.727,-0.9996,"Not as expected, quality is poor."
+Sports,Astra,color / quality / poor,negative,11,3.0,-0.9996,"Not as expected, quality is poor."
+Sports,Solace,color / quality / poor,negative,11,3.455,-0.9996,"Not as expected, quality is poor."
+Toys,Harbor,color / quality / poor,negative,11,3.909,-0.9996,"Not as expected, quality is poor."
+Automotive,GreenLeaf,arrived / customer / helpful,negative,11,3.909,-0.9992,Item arrived damaged.
+Automotive,Pulse,arrived / customer / helpful,negative,11,3.455,-0.9992,Item arrived damaged.
+Automotive,Zenith,arrived / customer / helpful,negative,11,3.455,-0.9992,Item arrived damaged.
+Beauty,Harbor,arrived / customer / helpful,negative,11,3.727,-0.9992,Item arrived damaged.
+Books,Willow,arrived / customer / helpful,negative,11,3.545,-0.9992,Item arrived damaged.
+Clothing,Astra,arrived / customer / helpful,negative,11,3.455,-0.9992,Item arrived damaged.
+Electronics,Acme,arrived / customer / helpful,negative,11,3.818,-0.9992,Item arrived damaged.
+Electronics,Pulse,arrived / customer / helpful,negative,11,3.636,-0.9992,Item arrived damaged.
+Home & Kitchen,GreenLeaf,arrived / customer / helpful,negative,11,3.727,-0.9992,Item arrived damaged.
+Pet Supplies,Acme,arrived / customer / helpful,negative,11,3.909,-0.9992,Item arrived damaged.
+Pet Supplies,Orion,arrived / customer / helpful,negative,11,3.455,-0.9992,Item arrived damaged.
+Pet Supplies,Pulse,arrived / customer / helpful,negative,11,3.909,-0.9992,Item arrived damaged.
+Automotive,Harbor,color / quality / poor,positive,11,3.727,0.9945,Color was different from images.
+Books,Acme,color / quality / poor,positive,11,3.364,0.9945,Color was different from images.
+Books,Zenith,color / quality / poor,positive,11,3.818,0.9945,Color was different from images.
+Groceries,GreenLeaf,color / quality / poor,positive,11,3.909,0.9945,Color was different from images.
+Groceries,NeoTech,color / quality / poor,positive,11,3.545,0.9945,Color was different from images.
+Home & Kitchen,Willow,color / quality / poor,positive,11,3.182,0.9945,Color was different from images.
+Pet Supplies,Acme,color / quality / poor,positive,11,3.364,0.9945,Color was different from images.
+Pet Supplies,Everest,color / quality / poor,positive,11,4.0,0.9945,Color was different from images.
+Automotive,Astra,money / value / works,positive,11,3.545,0.9977,Value for money.
+Automotive,NeoTech,money / value / works,positive,11,3.727,0.9977,Value for money.
+Automotive,Nimbus,money / value / works,positive,11,3.545,0.9977,Value for money.
+Beauty,Harbor,money / value / works,positive,11,3.636,0.9977,Value for money.
+Beauty,Pulse,money / value / works,positive,11,3.364,0.9977,Value for money.
+Beauty,Willow,money / value / works,positive,11,3.273,0.9977,Value for money.
+Books,Pulse,money / value / works,positive,11,3.091,0.9977,Value for money.
+Electronics,Acme,money / value / works,positive,11,3.636,0.9977,Value for money.
+Electronics,Everest,money / value / works,positive,11,3.545,0.9977,Value for money.
+Electronics,GreenLeaf,money / value / works,positive,11,3.727,0.9977,Value for money.
+Groceries,Solace,money / value / works,positive,11,3.0,0.9977,Value for money.
+Pet Supplies,Orion,money / value / works,positive,11,3.455,0.9977,Value for money.
+Automotive,Everest,works / perfectly / helpful,positive,11,3.182,0.9999,Works perfectly!
+Automotive,Orion,works / perfectly / helpful,positive,11,3.727,0.9999,Works perfectly!
+Books,Nimbus,works / perfectly / helpful,positive,11,4.091,0.9999,Works perfectly!
+Books,Zenith,works / perfectly / helpful,positive,11,3.273,0.9999,Works perfectly!
+Clothing,GreenLeaf,works / perfectly / helpful,positive,11,3.091,0.9999,Works perfectly!
+Clothing,Orion,works / perfectly / helpful,positive,11,4.0,0.9999,Works perfectly!
+Clothing,Solace,works / perfectly / helpful,positive,11,3.0,0.9999,Works perfectly!
+Electronics,Astra,works / perfectly / helpful,positive,11,3.182,0.9999,Works perfectly!
+Electronics,NeoTech,works / perfectly / helpful,positive,11,3.273,0.9999,Works perfectly!
+Groceries,Solace,works / perfectly / helpful,positive,11,3.273,0.9999,Works perfectly!
+Pet Supplies,Pulse,works / perfectly / helpful,positive,11,3.455,0.9999,Works perfectly!
+Pet Supplies,Willow,works / perfectly / helpful,positive,11,4.273,0.9999,Works perfectly!
+Sports,NeoTech,works / perfectly / helpful,positive,11,2.636,0.9999,Works perfectly!
+Sports,Orion,works / perfectly / helpful,positive,11,4.091,0.9999,Works perfectly!
+Sports,Solace,works / perfectly / helpful,positive,11,2.909,0.9999,Works perfectly!
+Automotive,GreenLeaf,color / quality / poor,negative,10,3.2,-0.9996,"Not as expected, quality is poor."
+Automotive,Zenith,color / quality / poor,negative,10,4.1,-0.9996,"Not as expected, quality is poor."
+Beauty,Harbor,color / quality / poor,negative,10,3.6,-0.9996,"Not as expected, quality is poor."
+Clothing,GreenLeaf,color / quality / poor,negative,10,3.5,-0.9996,"Not as expected, quality is poor."
+Clothing,Pulse,color / quality / poor,negative,10,3.3,-0.9996,"Not as expected, quality is poor."
+Clothing,Solace,color / quality / poor,negative,10,3.5,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,NeoTech,color / quality / poor,negative,10,3.7,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,GreenLeaf,color / quality / poor,negative,10,3.9,-0.9996,"Not as expected, quality is poor."
+Sports,GreenLeaf,color / quality / poor,negative,10,3.9,-0.9996,"Not as expected, quality is poor."
+Sports,Orion,color / quality / poor,negative,10,2.5,-0.9996,"Not as expected, quality is poor."
+Beauty,Pulse,arrived / customer / helpful,negative,10,3.4,-0.9992,Item arrived damaged.
+Books,Everest,arrived / customer / helpful,negative,10,3.7,-0.9992,Item arrived damaged.
+Books,Harbor,arrived / customer / helpful,negative,10,3.7,-0.9992,Item arrived damaged.
+Electronics,Everest,arrived / customer / helpful,negative,10,3.1,-0.9992,Item arrived damaged.
+Electronics,Solace,arrived / customer / helpful,negative,10,3.8,-0.9992,Item arrived damaged.
+Groceries,Astra,arrived / customer / helpful,negative,10,3.3,-0.9992,Item arrived damaged.
+Groceries,Everest,arrived / customer / helpful,negative,10,3.5,-0.9992,Item arrived damaged.
+Groceries,GreenLeaf,arrived / customer / helpful,negative,10,3.4,-0.9992,Item arrived damaged.
+Groceries,Harbor,arrived / customer / helpful,negative,10,3.1,-0.9992,Item arrived damaged.
+Home & Kitchen,Acme,arrived / customer / helpful,negative,10,3.7,-0.9992,Item arrived damaged.
+Home & Kitchen,Harbor,arrived / customer / helpful,negative,10,3.6,-0.9992,Item arrived damaged.
+Sports,Pulse,arrived / customer / helpful,negative,10,3.1,-0.9992,Item arrived damaged.
+Toys,GreenLeaf,arrived / customer / helpful,negative,10,3.5,-0.9992,Item arrived damaged.
+Automotive,GreenLeaf,color / quality / poor,positive,10,3.4,0.9945,Color was different from images.
+Beauty,Everest,color / quality / poor,positive,10,3.0,0.9945,Color was different from images.
+Books,Pulse,color / quality / poor,positive,10,3.6,0.9945,Color was different from images.
+Electronics,Pulse,color / quality / poor,positive,10,3.7,0.9945,Color was different from images.
+Groceries,Nimbus,color / quality / poor,positive,10,3.8,0.9945,Color was different from images.
+Home & Kitchen,Zenith,color / quality / poor,positive,10,3.1,0.9945,Color was different from images.
+Pet Supplies,Orion,color / quality / poor,positive,10,3.6,0.9945,Color was different from images.
+Toys,Orion,color / quality / poor,positive,10,3.9,0.9945,Color was different from images.
+Automotive,Everest,money / value / works,positive,10,3.9,0.9977,Value for money.
+Books,Acme,money / value / works,positive,10,3.5,0.9977,Value for money.
+Clothing,Acme,money / value / works,positive,10,3.4,0.9977,Value for money.
+Clothing,Pulse,money / value / works,positive,10,3.4,0.9977,Value for money.
+Electronics,NeoTech,money / value / works,positive,10,3.2,0.9977,Value for money.
+Groceries,Acme,money / value / works,positive,10,3.9,0.9977,Value for money.
+Home & Kitchen,GreenLeaf,money / value / works,positive,10,3.4,0.9977,Value for money.
+Pet Supplies,Acme,money / value / works,positive,10,3.0,0.9977,Value for money.
+Pet Supplies,Solace,money / value / works,positive,10,3.6,0.9977,Value for money.
+Sports,GreenLeaf,money / value / works,positive,10,3.4,0.9977,Value for money.
+Toys,Acme,money / value / works,positive,10,3.5,0.9977,Value for money.
+Toys,NeoTech,money / value / works,positive,10,3.8,0.9977,Value for money.
+Home & Kitchen,Astra,arrived / customer / helpful,positive,10,3.3,0.9986,Customer service was helpful.
+Beauty,Acme,arrived / customer / helpful,positive,10,3.9,0.999,Fast shipping and good packaging.
+Automotive,NeoTech,works / perfectly / helpful,positive,10,3.0,0.9999,Works perfectly!
+Automotive,Solace,works / perfectly / helpful,positive,10,3.7,0.9999,Works perfectly!
+Books,Astra,works / perfectly / helpful,positive,10,3.6,0.9999,Works perfectly!
+Books,Pulse,works / perfectly / helpful,positive,10,2.9,0.9999,Works perfectly!
+Clothing,Pulse,works / perfectly / helpful,positive,10,3.7,0.9999,Works perfectly!
+Electronics,Zenith,works / perfectly / helpful,positive,10,3.7,0.9999,Works perfectly!
+Groceries,Astra,works / perfectly / helpful,positive,10,3.5,0.9999,Works perfectly!
+Home & Kitchen,Harbor,works / perfectly / helpful,positive,10,3.3,0.9999,Works perfectly!
+Pet Supplies,Acme,works / perfectly / helpful,positive,10,4.0,0.9999,Works perfectly!
+Toys,Orion,works / perfectly / helpful,positive,10,3.3,0.9999,Works perfectly!
+Automotive,Acme,color / quality / poor,negative,9,2.111,-0.9996,"Not as expected, quality is poor."
+Books,NeoTech,color / quality / poor,negative,9,3.889,-0.9996,"Not as expected, quality is poor."
+Books,Solace,color / quality / poor,negative,9,3.667,-0.9996,"Not as expected, quality is poor."
+Sports,Willow,color / quality / poor,negative,9,3.222,-0.9996,"Not as expected, quality is poor."
+Toys,GreenLeaf,color / quality / poor,negative,9,3.111,-0.9996,"Not as expected, quality is poor."
+Toys,Willow,color / quality / poor,negative,9,3.889,-0.9996,"Not as expected, quality is poor."
+Automotive,NeoTech,arrived / customer / helpful,negative,9,3.222,-0.9992,Item arrived damaged.
+Books,Orion,arrived / customer / helpful,negative,9,3.778,-0.9992,Item arrived damaged.
+Groceries,Nimbus,arrived / customer / helpful,negative,9,3.889,-0.9992,Item arrived damaged.
+Home & Kitchen,Orion,arrived / customer / helpful,negative,9,4.444,-0.9992,Item arrived damaged.
+Home & Kitchen,Pulse,arrived / customer / helpful,negative,9,3.778,-0.9992,Item arrived damaged.
+Sports,GreenLeaf,arrived / customer / helpful,negative,9,2.889,-0.9992,Item arrived damaged.
+Sports,Orion,arrived / customer / helpful,negative,9,3.333,-0.9992,Item arrived damaged.
+Automotive,Astra,color / quality / poor,positive,9,3.333,0.9945,Color was different from images.
+Automotive,Pulse,color / quality / poor,positive,9,2.667,0.9945,Color was different from images.
+Books,NeoTech,color / quality / poor,positive,9,3.667,0.9945,Color was different from images.
+Clothing,Solace,color / quality / poor,positive,9,3.556,0.9945,Color was different from images.
+Clothing,Willow,color / quality / poor,positive,9,3.111,0.9945,Color was different from images.
+Groceries,Everest,color / quality / poor,positive,9,3.556,0.9945,Color was different from images.
+Groceries,Pulse,color / quality / poor,positive,9,3.889,0.9945,Color was different from images.
+Groceries,Solace,color / quality / poor,positive,9,3.889,0.9945,Color was different from images.
+Pet Supplies,Pulse,color / quality / poor,positive,9,4.0,0.9945,Color was different from images.
+Sports,Acme,color / quality / poor,positive,9,3.222,0.9945,Color was different from images.
+Toys,Willow,color / quality / poor,positive,9,3.0,0.9945,Color was different from images.
+Beauty,Nimbus,money / value / works,positive,9,4.444,0.9977,Value for money.
+Books,Solace,money / value / works,positive,9,3.444,0.9977,Value for money.
+Clothing,Astra,money / value / works,positive,9,3.111,0.9977,Value for money.
+Clothing,Solace,money / value / works,positive,9,2.778,0.9977,Value for money.
+Electronics,Harbor,money / value / works,positive,9,2.556,0.9977,Value for money.
+Groceries,Pulse,money / value / works,positive,9,3.444,0.9977,Value for money.
+Home & Kitchen,Acme,money / value / works,positive,9,3.333,0.9977,Value for money.
+Pet Supplies,Everest,money / value / works,positive,9,3.556,0.9977,Value for money.
+Sports,Astra,money / value / works,positive,9,3.0,0.9977,Value for money.
+Automotive,Pulse,works / perfectly / helpful,positive,9,3.778,0.9999,Works perfectly!
+Books,NeoTech,works / perfectly / helpful,positive,9,3.444,0.9999,Works perfectly!
+Books,Orion,works / perfectly / helpful,positive,9,3.778,0.9999,Works perfectly!
+Clothing,Acme,works / perfectly / helpful,positive,9,3.667,0.9999,Works perfectly!
+Groceries,Harbor,works / perfectly / helpful,positive,9,3.444,0.9999,Works perfectly!
+Home & Kitchen,Nimbus,works / perfectly / helpful,positive,9,4.222,0.9999,Works perfectly!
+Sports,Everest,works / perfectly / helpful,positive,9,3.778,0.9999,Works perfectly!
+Toys,Harbor,works / perfectly / helpful,positive,9,3.333,0.9999,Works perfectly!
+Automotive,Harbor,color / quality / poor,negative,8,4.125,-0.9996,"Not as expected, quality is poor."
+Books,Willow,color / quality / poor,negative,8,2.75,-0.9996,"Not as expected, quality is poor."
+Electronics,Harbor,color / quality / poor,negative,8,3.875,-0.9996,"Not as expected, quality is poor."
+Electronics,Willow,color / quality / poor,negative,8,4.25,-0.9996,"Not as expected, quality is poor."
+Groceries,Nimbus,color / quality / poor,negative,8,2.75,-0.9996,"Not as expected, quality is poor."
+Groceries,Solace,color / quality / poor,negative,8,3.375,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,GreenLeaf,color / quality / poor,negative,8,3.25,-0.9996,"Not as expected, quality is poor."
+Home & Kitchen,Orion,color / quality / poor,negative,8,3.75,-0.9996,"Not as expected, quality is poor."
+Pet Supplies,Orion,color / quality / poor,negative,8,3.375,-0.9996,"Not as expected, quality is poor."
+Toys,Acme,color / quality / poor,negative,8,3.375,-0.9996,"Not as expected, quality is poor."
+Toys,Pulse,color / quality / poor,negative,8,3.75,-0.9996,"Not as expected, quality is poor."
+Automotive,Acme,arrived / customer / helpful,negative,8,3.25,-0.9992,Item arrived damaged.
+Beauty,Zenith,arrived / customer / helpful,negative,8,3.25,-0.9992,Item arrived damaged.
+Home & Kitchen,Astra,arrived / customer / helpful,negative,8,3.5,-0.9992,Item arrived damaged.
+Home & Kitchen,Nimbus,arrived / customer / helpful,negative,8,3.75,-0.9992,Item arrived damaged.
+Pet Supplies,GreenLeaf,arrived / customer / helpful,negative,8,3.875,-0.9992,Item arrived damaged.
+Sports,Willow,arrived / customer / helpful,negative,8,3.375,-0.9992,Item arrived damaged.
+Toys,Willow,arrived / customer / helpful,negative,8,3.25,-0.9992,Item arrived damaged.
+Automotive,Acme,color / quality / poor,positive,8,4.25,0.9945,Color was different from images.
+Clothing,Acme,color / quality / poor,positive,8,2.0,0.9945,Color was different from images.
+Clothing,Astra,color / quality / poor,positive,8,3.625,0.9945,Color was different from images.
+Electronics,Zenith,color / quality / poor,positive,8,3.75,0.9945,Color was different from images.
+Groceries,Harbor,color / quality / poor,positive,8,3.875,0.9945,Color was different from images.
+Home & Kitchen,Harbor,color / quality / poor,positive,8,3.5,0.9945,Color was different from images.
+Home & Kitchen,Pulse,color / quality / poor,positive,8,3.875,0.9945,Color was different from images.
+Pet Supplies,Solace,color / quality / poor,positive,8,4.375,0.9945,Color was different from images.
+Sports,Astra,color / quality / poor,positive,8,2.625,0.9945,Color was different from images.
+Automotive,GreenLeaf,money / value / works,positive,8,3.75,0.9977,Value for money.
+Automotive,Harbor,money / value / works,positive,8,3.75,0.9977,Value for money.
+Automotive,Pulse,money / value / works,positive,8,3.75,0.9977,Value for money.
+Beauty,NeoTech,money / value / works,positive,8,3.5,0.9977,Value for money.
+Groceries,Nimbus,money / value / works,positive,8,4.125,0.9977,Value for money.
+Sports,Solace,money / value / works,positive,8,4.0,0.9977,Value for money.
+Sports,Willow,money / value / works,positive,8,4.0,0.9977,Value for money.
+Toys,Everest,money / value / works,positive,8,4.0,0.9977,Value for money.
+Toys,GreenLeaf,money / value / works,positive,8,3.75,0.9977,Value for money.
+Toys,Willow,money / value / works,positive,8,4.375,0.9977,Value for money.
+Beauty,Harbor,works / perfectly / helpful,positive,8,3.875,0.9999,Works perfectly!
+Groceries,Nimbus,works / perfectly / helpful,positive,8,3.125,0.9999,Works perfectly!
+Groceries,Zenith,works / perfectly / helpful,positive,8,3.25,0.9999,Works perfectly!
+Home & Kitchen,Acme,works / perfectly / helpful,positive,8,4.125,0.9999,Works perfectly!
+Home & Kitchen,Orion,works / perfectly / helpful,positive,8,3.375,0.9999,Works perfectly!
+Home & Kitchen,Willow,works / perfectly / helpful,positive,8,3.5,0.9999,Works perfectly!
+Sports,Astra,works / perfectly / helpful,positive,8,3.125,0.9999,Works perfectly!
+Sports,Willow,works / perfectly / helpful,positive,8,3.25,0.9999,Works perfectly!
+Groceries,Harbor,color / quality / poor,negative,7,3.143,-0.9996,"Not as expected, quality is poor."
+Books,Pulse,arrived / customer / helpful,negative,7,4.429,-0.9992,Item arrived damaged.
+Clothing,Acme,arrived / customer / helpful,negative,7,3.429,-0.9992,Item arrived damaged.
+Groceries,Willow,arrived / customer / helpful,negative,7,3.857,-0.9992,Item arrived damaged.
+Home & Kitchen,Willow,arrived / customer / helpful,negative,7,3.286,-0.9992,Item arrived damaged.
+Home & Kitchen,Zenith,arrived / customer / helpful,negative,7,3.571,-0.9992,Item arrived damaged.
+Automotive,NeoTech,color / quality / poor,positive,7,4.0,0.9945,Color was different from images.
+Beauty,Pulse,color / quality / poor,positive,7,3.857,0.9945,Color was different from images.
+Groceries,Orion,color / quality / poor,positive,7,2.286,0.9945,Color was different from images.
+Groceries,Willow,color / quality / poor,positive,7,3.286,0.9945,Color was different from images.
+Home & Kitchen,Acme,color / quality / poor,positive,7,3.286,0.9945,Color was different from images.
+Home & Kitchen,Astra,color / quality / poor,positive,7,4.0,0.9945,Color was different from images.
+Sports,Everest,color / quality / poor,positive,7,3.286,0.9945,Color was different from images.
+Sports,Orion,color / quality / poor,positive,7,3.714,0.9945,Color was different from images.
+Sports,Pulse,color / quality / poor,positive,7,3.143,0.9945,Color was different from images.
+Toys,Acme,color / quality / poor,positive,7,3.0,0.9945,Color was different from images.
+Home & Kitchen,Willow,money / value / works,positive,7,2.857,0.9977,Value for money.
+Automotive,Harbor,works / perfectly / helpful,positive,7,2.714,0.9999,Works perfectly!
+Books,Everest,works / perfectly / helpful,positive,7,4.0,0.9999,Works perfectly!
+Clothing,Astra,works / perfectly / helpful,positive,7,4.143,0.9999,Works perfectly!
+Electronics,Solace,works / perfectly / helpful,positive,7,3.143,0.9999,Works perfectly!
+Groceries,Everest,works / perfectly / helpful,positive,7,2.857,0.9999,Works perfectly!
+Home & Kitchen,Pulse,works / perfectly / helpful,positive,7,3.143,0.9999,Works perfectly!
+Automotive,Orion,color / quality / poor,positive,6,3.667,0.9945,Color was different from images.
+Clothing,Pulse,color / quality / poor,positive,6,3.0,0.9945,Color was different from images.
+Electronics,Harbor,color / quality / poor,positive,6,3.833,0.9945,Color was different from images.
+Toys,Harbor,color / quality / poor,positive,6,4.167,0.9945,Color was different from images.
+Beauty,Acme,money / value / works,positive,6,3.333,0.9977,Value for money.
+Books,Everest,money / value / works,positive,6,3.333,0.9977,Value for money.
+Groceries,Astra,money / value / works,positive,6,4.0,0.9977,Value for money.
+Books,Willow,works / perfectly / helpful,positive,6,2.5,0.9999,Works perfectly!
+Clothing,Nimbus,works / perfectly / helpful,positive,6,3.167,0.9999,Works perfectly!
+Electronics,Harbor,works / perfectly / helpful,positive,6,3.0,0.9999,Works perfectly!
+Groceries,Orion,works / perfectly / helpful,positive,6,3.167,0.9999,Works perfectly!
+Home & Kitchen,Astra,works / perfectly / helpful,positive,6,4.333,0.9999,Works perfectly!
+Automotive,Orion,color / quality / poor,negative,5,3.6,-0.9996,"Not as expected, quality is poor."
+Beauty,Acme,color / quality / poor,negative,5,3.6,-0.9996,"Not as expected, quality is poor."
+Electronics,Everest,color / quality / poor,negative,5,3.6,-0.9996,"Not as expected, quality is poor."
+Clothing,Nimbus,arrived / customer / helpful,negative,5,4.2,-0.9992,Item arrived damaged.
+Pet Supplies,Nimbus,arrived / customer / helpful,negative,5,2.4,-0.9992,Item arrived damaged.
+Books,Solace,color / quality / poor,positive,5,3.6,0.9945,Color was different from images.
+Sports,Willow,color / quality / poor,positive,5,3.2,0.9945,Color was different from images.
+Automotive,Orion,money / value / works,positive,5,3.6,0.9977,Value for money.
+Electronics,Pulse,money / value / works,positive,5,3.6,0.9977,Value for money.
+Sports,Orion,money / value / works,positive,5,3.8,0.9977,Value for money.
+Toys,Orion,money / value / works,positive,5,4.0,0.9977,Value for money.
+Electronics,Everest,works / perfectly / helpful,positive,5,3.8,0.9999,Works perfectly!
+Pet Supplies,Nimbus,works / perfectly / helpful,positive,5,3.4,0.9999,Works perfectly!
+Sports,GreenLeaf,works / perfectly / helpful,positive,5,4.0,0.9999,Works perfectly!
+Automotive,NeoTech,color / quality / poor,negative,4,3.0,-0.9996,"Not as expected, quality is poor."
+Beauty,NeoTech,arrived / customer / helpful,negative,4,3.5,-0.9992,Item arrived damaged.
+Clothing,Nimbus,color / quality / poor,positive,4,4.5,0.9945,Color was different from images.
+Groceries,Astra,color / quality / poor,positive,4,4.25,0.9945,Color was different from images.
+Automotive,Zenith,money / value / works,positive,4,4.25,0.9977,Value for money.
+Clothing,Nimbus,money / value / works,positive,4,4.0,0.9977,Value for money.
+Clothing,Nimbus,arrived / customer / helpful,positive,4,3.75,0.9994,Fast shipping and good packaging.
+Groceries,Willow,works / perfectly / helpful,positive,4,3.75,0.9999,Works perfectly!
+Pet Supplies,Solace,works / perfectly / helpful,positive,4,4.25,0.9999,Works perfectly!
+Clothing,Nimbus,color / quality / poor,negative,3,3.333,-0.9996,"Not as expected, quality is poor."
+Groceries,Willow,color / quality / poor,negative,3,2.667,-0.9996,"Not as expected, quality is poor."
+Clothing,Pulse,arrived / customer / helpful,negative,3,3.0,-0.9992,Item arrived damaged.
+Electronics,NeoTech,color / quality / poor,positive,3,3.333,0.9945,Color was different from images.
+Home & Kitchen,Astra,money / value / works,positive,3,4.0,0.9977,Value for money.
+Sports,Pulse,money / value / works,positive,3,4.333,0.9977,Value for money.
+Sports,Pulse,works / perfectly / helpful,positive,3,4.0,0.9999,Works perfectly!
+Electronics,NeoTech,arrived / customer / helpful,negative,2,3.5,-0.9992,Item arrived damaged.
+Groceries,Willow,money / value / works,positive,2,4.0,0.9977,Value for money.

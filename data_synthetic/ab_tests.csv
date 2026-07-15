@@ -1,0 +1,25 @@
+experiment_id,feature_area,start_date,end_date,variant,primary_metric,control_users,variant_users,control_conversions,variant_conversions
+EXP-001,Clothing,2024-01-27,2024-02-10,A: control / B: simplified UX,purchase_conversion,9543,10067,1000,1128
+EXP-002,Toys,2024-02-23,2024-03-08,A: control / B: simplified UX,cart_rate,8931,4217,993,562
+EXP-003,Pet Supplies,2024-03-20,2024-04-03,A: current / B: personalized ranking,refund_rate,9719,7462,1777,1413
+EXP-004,Beauty,2024-04-15,2024-04-29,A: current / B: personalized ranking,review_rating,6940,10942,832,1364
+EXP-005,Electronics,2024-05-11,2024-05-25,A: current / B: personalized ranking,revenue,10794,9149,1938,1551
+EXP-006,Home & Kitchen,2024-06-07,2024-06-21,A: control / B: simplified UX,purchase_conversion,6370,4653,681,602
+EXP-007,Books,2024-07-03,2024-07-17,A: control / B: simplified UX,cart_rate,6187,9749,1150,1980
+EXP-008,Automotive,2024-07-29,2024-08-12,A: control / B: simplified UX,refund_rate,11580,9242,1406,1351
+EXP-009,Search,2024-08-24,2024-09-07,A: current / B: personalized ranking,review_rating,8646,11179,1858,3028
+EXP-010,Checkout,2024-09-20,2024-10-04,A: current / B: personalized ranking,revenue,10102,8598,1230,1180
+EXP-011,Recommendations,2024-10-16,2024-10-30,A: control / B: simplified UX,purchase_conversion,10191,4385,1549,669
+EXP-012,Reviews,2024-11-11,2024-11-25,A: current / B: personalized ranking,cart_rate,8881,7834,1635,1720
+EXP-013,Clothing,2024-12-08,2024-12-22,A: current / B: personalized ranking,refund_rate,4913,6404,961,1270
+EXP-014,Toys,2025-01-03,2025-01-17,A: control / B: simplified UX,review_rating,8158,11476,1963,2709
+EXP-015,Pet Supplies,2025-01-29,2025-02-12,A: current / B: personalized ranking,revenue,4004,8906,822,1852
+EXP-016,Beauty,2025-02-24,2025-03-10,A: control / B: simplified UX,purchase_conversion,6519,5961,1440,1296
+EXP-017,Electronics,2025-03-23,2025-04-06,A: control / B: simplified UX,cart_rate,9404,7893,2012,1720
+EXP-018,Home & Kitchen,2025-04-18,2025-05-02,A: current / B: personalized ranking,refund_rate,9502,9323,1875,2069
+EXP-019,Books,2025-05-14,2025-05-28,A: control / B: simplified UX,review_rating,5804,4058,714,565
+EXP-020,Automotive,2025-06-09,2025-06-23,A: current / B: personalized ranking,revenue,5949,6281,1279,1534
+EXP-021,Search,2025-07-06,2025-07-20,A: current / B: personalized ranking,purchase_conversion,9398,7531,1244,1030
+EXP-022,Checkout,2025-08-01,2025-08-15,A: current / B: personalized ranking,cart_rate,4806,4496,888,842
+EXP-023,Recommendations,2025-08-27,2025-09-10,A: control / B: simplified UX,refund_rate,6046,11163,784,1464
+EXP-024,Reviews,2025-09-22,2025-10-06,A: control / B: simplified UX,review_rating,10952,5936,2620,1393

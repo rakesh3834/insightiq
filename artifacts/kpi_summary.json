@@ -1,0 +1,19 @@
+{
+  "total_users": 10000,
+  "total_products": 2000,
+  "total_events": 80000,
+  "total_orders": 20000,
+  "completed_orders": 4021,
+  "completed_revenue": 2419712.58,
+  "average_order_value": 595.93,
+  "avg_review_rating": 3.545,
+  "viewers": 9961,
+  "carters": 6994,
+  "buyers": 3320,
+  "cart_rate": 0.7021,
+  "purchase_conversion": 0.3333,
+  "cancellation_rate": 0.196,
+  "first_order_date": "2024-01-01 00:14:17.631198",
+  "last_order_date": "2025-11-14 23:17:25.548939",
+  "monthly_revenue_rows": 23
+}

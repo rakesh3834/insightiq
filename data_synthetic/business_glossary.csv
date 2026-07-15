@@ -1,0 +1,7 @@
+term,definition
+North Star Metric,Share of product decisions backed by complete evidence.
+Cart Rate,Users who add at least one viewed product to cart.
+Purchase Conversion,Users with completed orders divided by product viewers.
+Review Intelligence,Qualitative review themes mapped to product metrics.
+Root Cause Analysis,"A ranked set of hypotheses supported by metrics, events, reviews, experiments, and release context."
+Decision Scientist,"A role focused on translating product data, experimentation, and business metrics into decisions."

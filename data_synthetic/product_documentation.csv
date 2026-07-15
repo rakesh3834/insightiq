@@ -1,0 +1,5 @@
+doc_id,title,content
+DOC-001,Launch Review Playbook,"Every launch decision must cite event, revenue, review, experiment, and incident evidence."
+DOC-002,Rollback Criteria,"Rollback when revenue, conversion, or review sentiment declines with clear release correlation."
+DOC-003,InsightIQ Product PRD,"The platform simulates a PM workflow: open Mixpanel, open Tableau, write SQL, ask a data scientist, read reviews, read release notes, create a presentation, and make a decision."
+DOC-004,Cost Optimization Playbook,"Use prompt caching, batch processing, parallel workers, retrieval filtering, and response caching before scaling LLM workloads."

@@ -1,0 +1,15 @@
+services:
+  insightiq:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      INSIGHTIQ_REBUILD_ON_START: "true"
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./ecommerce_dataset:/app/ecommerce_dataset
+      - ./data_synthetic:/app/data_synthetic

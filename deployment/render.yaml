@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: insightiq
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scripts/start_api.py
+    envVars:
+      - key: INSIGHTIQ_REBUILD_ON_START
+        value: true
+      - key: HF_LLM_MODEL
+        value: mistralai/Mistral-7B-Instruct-v0.3

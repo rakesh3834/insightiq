@@ -1,0 +1,25 @@
+experiment_id,feature_area,primary_metric,control_users,variant_users,control_rate,variant_rate,lift_pct,z_stat,p_value,significant,statistical_readout,rollout_recommendation
+EXP-001,Clothing,purchase_conversion,9543,10067,0.1048,0.112,6.93,1.634,0.1023,False,inconclusive,continue_test_or_segment
+EXP-002,Toys,cart_rate,8931,4217,0.1112,0.1333,19.86,3.66,0.0003,True,significant_positive,ship_or_expand
+EXP-003,Pet Supplies,refund_rate,9719,7462,0.1828,0.1894,3.57,1.09,0.2759,False,inconclusive,continue_test_or_segment
+EXP-004,Beauty,review_rating,6940,10942,0.1199,0.1247,3.98,0.948,0.3433,False,inconclusive,continue_test_or_segment
+EXP-005,Electronics,revenue,10794,9149,0.1795,0.1695,-5.58,-1.855,0.0635,False,inconclusive,continue_test_or_segment
+EXP-006,Home & Kitchen,purchase_conversion,6370,4653,0.1069,0.1294,21.02,3.634,0.0003,True,significant_positive,ship_or_expand
+EXP-007,Books,cart_rate,6187,9749,0.1859,0.2031,9.27,2.667,0.0076,True,significant_positive,ship_or_expand
+EXP-008,Automotive,refund_rate,11580,9242,0.1214,0.1462,20.4,5.238,0.0,True,significant_positive,ship_or_expand
+EXP-009,Search,review_rating,8646,11179,0.2149,0.2709,26.04,9.068,0.0,True,significant_positive,ship_or_expand
+EXP-010,Checkout,revenue,10102,8598,0.1218,0.1372,12.72,3.149,0.0016,True,significant_positive,ship_or_expand
+EXP-011,Recommendations,purchase_conversion,10191,4385,0.152,0.1526,0.37,0.088,0.9301,False,inconclusive,continue_test_or_segment
+EXP-012,Reviews,cart_rate,8881,7834,0.1841,0.2196,19.26,5.711,0.0,True,significant_positive,ship_or_expand
+EXP-013,Clothing,refund_rate,4913,6404,0.1956,0.1983,1.39,0.359,0.7195,False,inconclusive,continue_test_or_segment
+EXP-014,Toys,review_rating,8158,11476,0.2406,0.2361,-1.9,-0.74,0.4592,False,inconclusive,continue_test_or_segment
+EXP-015,Pet Supplies,revenue,4004,8906,0.2053,0.2079,1.29,0.344,0.7306,False,inconclusive,continue_test_or_segment
+EXP-016,Beauty,purchase_conversion,6519,5961,0.2209,0.2174,-1.58,-0.469,0.6388,False,inconclusive,continue_test_or_segment
+EXP-017,Electronics,cart_rate,9404,7893,0.214,0.2179,1.85,0.631,0.528,False,inconclusive,continue_test_or_segment
+EXP-018,Home & Kitchen,refund_rate,9502,9323,0.1973,0.2219,12.47,4.146,0.0,True,significant_positive,ship_or_expand
+EXP-019,Books,review_rating,5804,4058,0.123,0.1392,13.18,2.358,0.0184,True,significant_positive,ship_or_expand
+EXP-020,Automotive,revenue,5949,6281,0.215,0.2442,13.6,3.84,0.0001,True,significant_positive,ship_or_expand
+EXP-021,Search,purchase_conversion,9398,7531,0.1324,0.1368,3.32,0.834,0.4042,False,inconclusive,continue_test_or_segment
+EXP-022,Checkout,cart_rate,4806,4496,0.1848,0.1873,1.36,0.311,0.756,False,inconclusive,continue_test_or_segment
+EXP-023,Recommendations,refund_rate,6046,11163,0.1297,0.1311,1.14,0.274,0.784,False,inconclusive,continue_test_or_segment
+EXP-024,Reviews,review_rating,10952,5936,0.2392,0.2347,-1.9,-0.664,0.5066,False,inconclusive,continue_test_or_segment

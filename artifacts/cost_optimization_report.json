@@ -1,0 +1,16 @@
+{
+  "baseline_monthly_cost_inr": 4500000,
+  "optimized_monthly_cost_inr": 2400000,
+  "monthly_savings_inr": 2100000,
+  "savings_pct": 0.4667,
+  "optimization_levers": [
+    "prompt caching for repeated business context",
+    "batch processing for review and release summarization",
+    "ThreadPoolExecutor for parallel IO-bound enrichment",
+    "RAG metadata filtering before LLM calls",
+    "response caching for stable dashboard narratives",
+    "SQL-first metric computation before generation"
+  ],
+  "rows_processed": 100000,
+  "note": "Cost numbers are modeled from the PRD scenario and included as a resume/business-impact artifact."
+}

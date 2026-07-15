@@ -1,0 +1,84 @@
+{
+  "users": {
+    "rows": 10000,
+    "columns": [
+      "user_id",
+      "name",
+      "email",
+      "gender",
+      "city",
+      "signup_date"
+    ],
+    "duplicate_primary_keys": 0,
+    "missing_primary_keys": 0
+  },
+  "products": {
+    "rows": 2000,
+    "columns": [
+      "product_id",
+      "product_name",
+      "category",
+      "brand",
+      "price",
+      "rating"
+    ],
+    "duplicate_primary_keys": 0,
+    "missing_primary_keys": 0
+  },
+  "orders": {
+    "rows": 20000,
+    "columns": [
+      "order_id",
+      "user_id",
+      "order_date",
+      "order_status",
+      "total_amount"
+    ],
+    "duplicate_primary_keys": 0,
+    "missing_primary_keys": 0
+  },
+  "order_items": {
+    "rows": 43525,
+    "columns": [
+      "order_item_id",
+      "order_id",
+      "product_id",
+      "user_id",
+      "quantity",
+      "item_price",
+      "item_total"
+    ],
+    "duplicate_primary_keys": 0,
+    "missing_primary_keys": 0
+  },
+  "events": {
+    "rows": 80000,
+    "columns": [
+      "event_id",
+      "user_id",
+      "product_id",
+      "event_type",
+      "event_timestamp"
+    ],
+    "duplicate_primary_keys": 0,
+    "missing_primary_keys": 0
+  },
+  "reviews": {
+    "rows": 15000,
+    "columns": [
+      "review_id",
+      "order_id",
+      "product_id",
+      "user_id",
+      "rating",
+      "review_text",
+      "review_date"
+    ],
+    "duplicate_primary_keys": 0,
+    "missing_primary_keys": 0
+  },
+  "relationships": {
+    "orders_without_users": 0,
+    "items_without_products": 0
+  }
+}

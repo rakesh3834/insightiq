@@ -1,0 +1,5 @@
+rank,hypothesis,evidence,recommended_action,confidence
+1,Checkout or fulfillment friction is contributing to cancellations.,Cancellation rate is 19.6% across 20000 orders.,"Inspect cancelled orders by category, compare incident windows, and run checkout retry experiment.",0.78
+2,Customer experience issues in Clothing / Harbor are visible in reviews.,"Topic 'color / quality / poor' has 30 reviews and sentiment -0.9996. Example: Not as expected, quality is poor.",Prioritize review theme fixes for high-revenue categories before broad launch.,0.72
+3,Clothing release context may explain metric instability.,REL-013 has 2 nearby anomalies and 2 related incidents.,"Review release diff, feature flag rollout, and incident timeline before deciding.",0.69
+4,Search has a validated growth opportunity.,EXP-009 improved review_rating by 26.04% with p=0.0.,"Ship to the winning segment first, monitor guardrails, then expand rollout.",0.82

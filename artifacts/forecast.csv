@@ -1,0 +1,15 @@
+forecast_day,forecast_revenue,lower,upper,method
+2025-11-15,4165.05,0.0,8816.42,holt_winters_add_trend_weekly_seasonal
+2025-11-16,3734.55,0.0,8385.92,holt_winters_add_trend_weekly_seasonal
+2025-11-17,3421.18,0.0,8072.55,holt_winters_add_trend_weekly_seasonal
+2025-11-18,3412.2,0.0,8063.57,holt_winters_add_trend_weekly_seasonal
+2025-11-19,3496.8,0.0,8148.16,holt_winters_add_trend_weekly_seasonal
+2025-11-20,4165.8,0.0,8817.17,holt_winters_add_trend_weekly_seasonal
+2025-11-21,3767.05,0.0,8418.42,holt_winters_add_trend_weekly_seasonal
+2025-11-22,4167.43,0.0,8818.8,holt_winters_add_trend_weekly_seasonal
+2025-11-23,3736.93,0.0,8388.3,holt_winters_add_trend_weekly_seasonal
+2025-11-24,3423.56,0.0,8074.93,holt_winters_add_trend_weekly_seasonal
+2025-11-25,3414.58,0.0,8065.95,holt_winters_add_trend_weekly_seasonal
+2025-11-26,3499.18,0.0,8150.54,holt_winters_add_trend_weekly_seasonal
+2025-11-27,4168.18,0.0,8819.55,holt_winters_add_trend_weekly_seasonal
+2025-11-28,3769.43,0.0,8420.8,holt_winters_add_trend_weekly_seasonal

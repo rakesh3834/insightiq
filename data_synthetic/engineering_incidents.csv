@@ -1,0 +1,15 @@
+incident_id,incident_date,severity,affected_area,duration_minutes,customer_impact,resolution
+INC-001,2024-02-13,SEV2,Beauty,33,Some users experienced degraded beauty performance.,Mitigation shipped and follow-up monitoring added.
+INC-002,2024-03-26,SEV2,Pet Supplies,18,Some users experienced degraded pet supplies performance.,Mitigation shipped and follow-up monitoring added.
+INC-003,2024-05-08,SEV2,Books,218,Some users experienced degraded books performance.,Mitigation shipped and follow-up monitoring added.
+INC-004,2024-06-20,SEV2,Automotive,126,Some users experienced degraded automotive performance.,Mitigation shipped and follow-up monitoring added.
+INC-005,2024-08-01,SEV3,Reviews,218,Some users experienced degraded reviews performance.,Mitigation shipped and follow-up monitoring added.
+INC-006,2024-09-13,SEV3,Search,201,Some users experienced degraded search performance.,Mitigation shipped and follow-up monitoring added.
+INC-007,2024-10-26,SEV1,Automotive,66,Some users experienced degraded automotive performance.,Mitigation shipped and follow-up monitoring added.
+INC-008,2024-12-08,SEV1,Electronics,32,Some users experienced degraded electronics performance.,Mitigation shipped and follow-up monitoring added.
+INC-009,2025-01-19,SEV3,Checkout,156,Some users experienced degraded checkout performance.,Mitigation shipped and follow-up monitoring added.
+INC-010,2025-03-03,SEV3,Clothing,98,Some users experienced degraded clothing performance.,Mitigation shipped and follow-up monitoring added.
+INC-011,2025-04-15,SEV1,Clothing,167,Some users experienced degraded clothing performance.,Mitigation shipped and follow-up monitoring added.
+INC-012,2025-05-27,SEV3,Automotive,236,Some users experienced degraded automotive performance.,Mitigation shipped and follow-up monitoring added.
+INC-013,2025-07-09,SEV1,Search,32,Some users experienced degraded search performance.,Mitigation shipped and follow-up monitoring added.
+INC-014,2025-08-21,SEV1,Search,235,Some users experienced degraded search performance.,Mitigation shipped and follow-up monitoring added.

@@ -1,0 +1,25 @@
+flag_id,feature_area,flag_name,enabled_pct,owner,status
+FLAG-001,Clothing,clothing_release_1,100,mobile,active
+FLAG-002,Toys,toys_release_2,100,mobile,active
+FLAG-003,Pet Supplies,pet supplies_release_3,50,growth,active
+FLAG-004,Beauty,beauty_release_4,100,platform,active
+FLAG-005,Electronics,electronics_release_5,100,growth,paused
+FLAG-006,Home & Kitchen,home & kitchen_release_6,10,mobile,graduated
+FLAG-007,Books,books_release_7,100,growth,paused
+FLAG-008,Automotive,automotive_release_8,50,product,active
+FLAG-009,Search,search_release_9,25,mobile,graduated
+FLAG-010,Checkout,checkout_release_10,100,mobile,paused
+FLAG-011,Recommendations,recommendations_release_11,25,growth,paused
+FLAG-012,Reviews,reviews_release_12,100,product,paused
+FLAG-013,Clothing,clothing_release_13,25,mobile,active
+FLAG-014,Toys,toys_release_14,50,growth,active
+FLAG-015,Pet Supplies,pet supplies_release_15,75,product,active
+FLAG-016,Beauty,beauty_release_16,25,product,active
+FLAG-017,Electronics,electronics_release_17,50,mobile,active
+FLAG-018,Home & Kitchen,home & kitchen_release_18,75,mobile,active
+FLAG-019,Books,books_release_19,10,growth,active
+FLAG-020,Automotive,automotive_release_20,25,growth,paused
+FLAG-021,Search,search_release_21,75,mobile,graduated
+FLAG-022,Checkout,checkout_release_22,50,product,active
+FLAG-023,Recommendations,recommendations_release_23,75,product,active
+FLAG-024,Reviews,reviews_release_24,75,mobile,graduated
