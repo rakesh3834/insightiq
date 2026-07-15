@@ -3,13 +3,17 @@ services:
     name: insightiq
     runtime: python
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python scripts/start_api.py
+    # Build the ML artifacts (SQLite warehouse + Chroma vector DB + reports) at
+    # BUILD time — not on every boot. This keeps the 512MB runtime instance from
+    # OOM-ing / timing out the health check while it rebuilds the pipeline; it
+    # just serves the pre-built artifacts baked into the deploy.
+    buildCommand: pip install -r requirements.txt && python scripts/run_all.py
+    startCommand: python -m scripts.start_api
     healthCheckPath: /health
     envVars:
-      # Rebuilds artifacts on boot so the API serves fresh data.
+      # Artifacts already built during buildCommand — don't rebuild on boot.
       - key: INSIGHTIQ_REBUILD_ON_START
-        value: "true"
+        value: "false"
       # Deploys fully offline (deterministic fallbacks) — no token required.
       # To enable real LLM + HF embeddings/sentiment: add HF_TOKEN in the Render
       # dashboard and flip these two flags to "true".
