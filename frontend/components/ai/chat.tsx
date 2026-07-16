@@ -203,6 +203,11 @@ export function AIChat() {
   const [loading, setLoading] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
+  // Show the starter prompts only before the first question. Once a
+  // conversation begins they'd otherwise stay pinned above the input and, on
+  // mobile, cover most of the screen — hiding the generated answer.
+  const conversationStarted = messages.some(m => m.role === "user");
+
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
@@ -273,18 +278,20 @@ export function AIChat() {
         <div ref={bottomRef} />
       </div>
 
-      {/* Suggested questions */}
-      <div className="flex flex-wrap gap-2 py-3 border-t border-zinc-800">
-        {SUGGESTED.map(q => (
-          <button
-            key={q}
-            onClick={() => send(q)}
-            className="text-xs bg-zinc-900 border border-zinc-800 hover:border-indigo-500/40 hover:text-indigo-400 text-zinc-500 px-3 py-1.5 rounded-full transition-all"
-          >
-            {q}
-          </button>
-        ))}
-      </div>
+      {/* Suggested questions — only before the conversation starts */}
+      {!conversationStarted && (
+        <div className="flex flex-wrap gap-2 py-3 border-t border-zinc-800">
+          {SUGGESTED.map(q => (
+            <button
+              key={q}
+              onClick={() => send(q)}
+              className="text-xs bg-zinc-900 border border-zinc-800 hover:border-indigo-500/40 hover:text-indigo-400 text-zinc-500 px-3 py-1.5 rounded-full transition-all"
+            >
+              {q}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Input */}
       <div className="flex gap-3 pt-3">
