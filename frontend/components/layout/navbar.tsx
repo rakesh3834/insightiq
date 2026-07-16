@@ -1,23 +1,32 @@
 "use client";
-import { Bell, Search, Moon, Sun, Zap } from "lucide-react";
+import { Bell, Search, Moon, Sun, Zap, Menu } from "lucide-react";
 import { useTheme } from "@/providers/theme-provider";
 import { Button } from "@/components/ui/button";
 
-export function Navbar() {
+export function Navbar({ onMenuClick }: { onMenuClick: () => void }) {
   const { theme, toggle } = useTheme();
 
   return (
-    <header className="h-14 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md flex items-center px-6 gap-4 sticky top-0 z-40">
+    <header className="h-14 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md flex items-center px-4 sm:px-6 gap-3 sm:gap-4 sticky top-0 z-40">
+      {/* Hamburger — mobile only, opens the nav drawer */}
+      <button
+        onClick={onMenuClick}
+        aria-label="Open menu"
+        className="md:hidden p-2 -ml-2 text-zinc-400 hover:text-zinc-100 rounded-lg hover:bg-zinc-800/60 transition-colors"
+      >
+        <Menu className="w-5 h-5" />
+      </button>
+
       {/* Logo */}
-      <div className="flex items-center gap-2 mr-4">
+      <div className="flex items-center gap-2 sm:mr-4">
         <div className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center">
           <Zap className="w-4 h-4 text-white" />
         </div>
         <span className="font-semibold text-sm text-zinc-100 tracking-tight">InsightIQ</span>
       </div>
 
-      {/* Search */}
-      <div className="flex-1 max-w-md">
+      {/* Search — hidden on small screens */}
+      <div className="flex-1 max-w-md hidden sm:block">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500" />
           <input

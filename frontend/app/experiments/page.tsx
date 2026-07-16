@@ -46,7 +46,7 @@ export default function ExperimentsPage() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { label: "Ship or Expand", count: stats.ship, variant: "success" as const, icon: <TrendingUp className="w-4 h-4 text-emerald-400" /> },
             { label: "Continue / Segment", count: stats.continue, variant: "warning" as const, icon: <FlaskConical className="w-4 h-4 text-amber-400" /> },
