@@ -53,7 +53,17 @@ export interface FeatureSelection {
   note: string;
 }
 
+export interface AttributionItem {
+  agent: string;
+  label: string;
+  weight: number;
+  direction: "risk" | "opportunity" | "informational";
+  confidence: number;
+}
+
 export interface ModelEvaluation {
+  model_name?: string;
+  target_short?: string;
   target: string;
   n_samples: number;
   n_train: number;

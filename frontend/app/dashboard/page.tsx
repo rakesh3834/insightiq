@@ -126,6 +126,63 @@ function DecisionHero({ run }: { run: Record<string, unknown> | undefined }) {
   );
 }
 
+// ── explainability: Decision Confidence + evidence attribution ──────────────
+type Attribution = { agent: string; label: string; weight: number; direction: string; confidence: number };
+
+const DIR_STYLE: Record<string, { bar: string; dot: string; tag: string }> = {
+  risk: { bar: "bg-red-500/70", dot: "bg-red-400", tag: "text-red-400" },
+  opportunity: { bar: "bg-emerald-500/70", dot: "bg-emerald-400", tag: "text-emerald-400" },
+  informational: { bar: "bg-zinc-500/70", dot: "bg-zinc-400", tag: "text-zinc-400" },
+};
+
+function ConfidenceBreakdown({ run }: { run: Record<string, unknown> | undefined }) {
+  if (!run) return <Skeleton className="h-56 w-full rounded-xl" />;
+  const rec = (run.recommendation ?? {}) as { confidence?: number; attribution?: Attribution[] };
+  const attribution = rec.attribution ?? [];
+  const confidencePct = Math.round((rec.confidence ?? 0) * 100);
+  if (attribution.length === 0) return null;
+
+  return (
+    <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
+      <div className="flex items-start justify-between gap-4 mb-5">
+        <div>
+          <h3 className="text-sm font-semibold text-zinc-200">Decision Confidence</h3>
+          <p className="text-[11px] text-zinc-500 mt-0.5">How each evidence stream contributed to the recommendation</p>
+        </div>
+        <div className="text-right shrink-0">
+          <p className="text-3xl font-bold text-zinc-100 tracking-tight leading-none">{confidencePct}%</p>
+          <p className="text-[10px] text-zinc-500 mt-1 uppercase tracking-wider">confidence</p>
+        </div>
+      </div>
+
+      <div className="space-y-3">
+        {attribution.map((a) => {
+          const s = DIR_STYLE[a.direction] ?? DIR_STYLE.informational;
+          return (
+            <div key={a.agent}>
+              <div className="flex items-center justify-between text-[11px] mb-1">
+                <span className="flex items-center gap-1.5 text-zinc-300">
+                  <span className={`w-1.5 h-1.5 rounded-full ${s.dot}`} />
+                  {a.label}
+                  <span className={`text-[10px] ${s.tag}`}>· {a.direction}</span>
+                </span>
+                <span className="font-semibold text-zinc-200 tabular-nums">{a.weight}%</span>
+              </div>
+              <div className="h-2 rounded-full bg-zinc-800 overflow-hidden">
+                <div className={`h-full rounded-full ${s.bar}`} style={{ width: `${a.weight}%` }} />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <p className="text-[10px] text-zinc-600 mt-4 pt-4 border-t border-zinc-800/80">
+        Weights are derived from each agent&apos;s evidence strength and direction, normalized to 100% — an explainable trace of the confidence score.
+      </p>
+    </div>
+  );
+}
+
 export default function DashboardPage() {
   const { data: kpis } = useQuery({ queryKey: QUERY_KEYS.kpis, queryFn: api.kpis });
   const { data: revenue, isLoading: revLoading } = useQuery({ queryKey: QUERY_KEYS.monthlyRevenue, queryFn: api.monthlyRevenue });
@@ -158,8 +215,15 @@ export default function DashboardPage() {
 
         {/* 1 — AI DECISION (LLM + Decision Science) */}
         <section>
-          <SectionLabel title="The Decision" discipline="LLM · Decision Science" />
-          <DecisionHero run={run as Record<string, unknown> | undefined} />
+          <SectionLabel title="The Decision" discipline="LLM · Decision Science · Explainable AI" />
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+            <div className="lg:col-span-3">
+              <DecisionHero run={run as Record<string, unknown> | undefined} />
+            </div>
+            <div className="lg:col-span-2">
+              <ConfidenceBreakdown run={run as Record<string, unknown> | undefined} />
+            </div>
+          </div>
         </section>
 
         {/* 2 — BUSINESS METRICS (Analytics) */}
@@ -188,7 +252,7 @@ export default function DashboardPage() {
             <ModelTile method="Holt-Winters" color="bg-blue-500/15 text-blue-400" value={compactUSD(forecastTotal)} label="14-day forecast" href="/analytics" />
             <ModelTile method="Isolation Forest" color="bg-amber-500/15 text-amber-400" value={String(anomalyCount)} label="anomalous days" href="/analytics" />
             <ModelTile method="KMeans" color="bg-cyan-500/15 text-cyan-400" value={String(segmentCount)} label="user segments" href="/analytics" />
-            <ModelTile method="XGBoost + 4" color="bg-indigo-500/15 text-indigo-400" value={modelEval ? (modelEval as { best_metrics?: { roc_auc?: number } }).best_metrics?.roc_auc?.toFixed(3) ?? "—" : "—"} label="cancel-risk AUC" href="/risk-model" />
+            <ModelTile method="XGBoost + 4" color="bg-indigo-500/15 text-indigo-400" value={modelEval ? (modelEval as { best_metrics?: { roc_auc?: number } }).best_metrics?.roc_auc?.toFixed(3) ?? "—" : "—"} label="revenue-risk AUC" href="/risk-model" />
           </div>
         </section>
 

@@ -1,5 +1,7 @@
 {
-  "target": "order cancellation (realistic risk label)",
+  "model_name": "Business Health \u2014 Revenue-at-Risk Model",
+  "target_short": "Revenue-at-Risk",
+  "target": "revenue-at-risk: order cancellation as a churn / lost-revenue signal",
   "n_samples": 20000,
   "n_train": 15000,
   "n_test": 5000,

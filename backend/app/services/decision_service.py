@@ -156,6 +156,7 @@ class DecisionService:
                 "rationale": recommendation.get("rationale"),
                 "risks": recommendation.get("risks", []),
                 "next_actions": recommendation.get("next_actions", []),
+                "attribution": recommendation.get("attribution", []),
             },
             "findings": [
                 {"agent": f.get("agent"), "finding": f.get("finding"), "confidence": f.get("confidence")}

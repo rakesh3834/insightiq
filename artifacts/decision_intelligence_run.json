@@ -88,69 +88,76 @@
       },
       {
         "agent": "customer_voice_agent",
-        "finding": "Customer reviews highlight a negative theme in Clothing / Harbor: color / quality / poor.",
+        "finding": "Customer reviews highlight a negative theme in Clothing / GreenLeaf: arrived / damaged / good.",
         "evidence": [
           {
-            "source": "experiments",
-            "title": "EXP-011",
-            "summary": "Experiment on Recommendations for purchase_conversion: lift -3.17%, p-value 0.22, decision monitor",
-            "confidence": 0.4915,
+            "source": "reviews",
+            "title": "Review R00041723",
+            "summary": "Rating 3: Decent product for the price.",
+            "confidence": 0.4033,
             "metadata": {
-              "feature_area": "Recommendations",
-              "experiment_id": "EXP-011",
-              "source": "experiments",
-              "metric": "purchase_conversion",
-              "title": "EXP-011"
+              "category": "Groceries",
+              "brand": "Acme",
+              "source": "reviews",
+              "date": "2025-11-13",
+              "product_id": "P001642",
+              "title": "Review R00041723"
             }
           },
           {
-            "source": "business_glossary",
-            "title": "Decision Scientist",
-            "summary": "A role focused on translating product data, experimentation, and business metrics into decisions.",
-            "confidence": 0.4778,
+            "source": "reviews",
+            "title": "Review R00007821",
+            "summary": "Rating 3: Decent product for the price.",
+            "confidence": 0.4033,
             "metadata": {
-              "title": "Decision Scientist",
-              "source": "business_glossary",
-              "id": "Decision Scientist"
+              "category": "Home & Kitchen",
+              "brand": "Pulse",
+              "source": "reviews",
+              "title": "Review R00007821",
+              "date": "2024-07-04",
+              "product_id": "P001114"
             }
           },
           {
-            "source": "experiments",
-            "title": "EXP-005",
-            "summary": "Experiment on Electronics for revenue: lift 3.55%, p-value 0.196, decision rollback",
-            "confidence": 0.4532,
+            "source": "reviews",
+            "title": "Review R00039765",
+            "summary": "Rating 3: Decent product for the price.",
+            "confidence": 0.4033,
             "metadata": {
-              "experiment_id": "EXP-005",
-              "title": "EXP-005",
-              "metric": "revenue",
-              "feature_area": "Electronics",
-              "source": "experiments"
+              "date": "2024-01-15",
+              "category": "Groceries",
+              "source": "reviews",
+              "product_id": "P000845",
+              "brand": "Nimbus",
+              "title": "Review R00039765"
             }
           },
           {
-            "source": "experiments",
-            "title": "EXP-006",
-            "summary": "Experiment on Home & Kitchen for purchase_conversion: lift 6.37%, p-value 0.152, decision monitor",
-            "confidence": 0.4455,
+            "source": "reviews",
+            "title": "Review R00014467",
+            "summary": "Rating 3: Decent product for the price.",
+            "confidence": 0.4033,
             "metadata": {
-              "title": "EXP-006",
-              "source": "experiments",
-              "metric": "purchase_conversion",
-              "feature_area": "Home & Kitchen",
-              "experiment_id": "EXP-006"
+              "source": "reviews",
+              "title": "Review R00014467",
+              "date": "2024-01-08",
+              "brand": "Solace",
+              "product_id": "P000663",
+              "category": "Sports"
             }
           },
           {
-            "source": "experiments",
-            "title": "EXP-016",
-            "summary": "Experiment on Beauty for purchase_conversion: lift -0.33%, p-value 0.046, decision ship",
-            "confidence": 0.4371,
+            "source": "reviews",
+            "title": "Review R00005172",
+            "summary": "Rating 3: Decent product for the price.",
+            "confidence": 0.4033,
             "metadata": {
-              "feature_area": "Beauty",
-              "source": "experiments",
-              "metric": "purchase_conversion",
-              "title": "EXP-016",
-              "experiment_id": "EXP-016"
+              "category": "Electronics",
+              "brand": "Acme",
+              "date": "2024-09-07",
+              "source": "reviews",
+              "title": "Review R00005172",
+              "product_id": "P000716"
             }
           }
         ],
@@ -161,55 +168,68 @@
         "finding": "Checkout has release or incident risk around REL-010.",
         "evidence": [
           {
-            "source": "experiments",
-            "title": "EXP-010",
-            "summary": "Experiment on Checkout for revenue: lift 4.56%, p-value 0.204, decision ship",
-            "confidence": 0.428,
+            "source": "engineering_incidents",
+            "title": "INC-009",
+            "summary": "SEV3 incident in Checkout: Some users experienced degraded checkout performance.. Resolution: Mitigation shipped and follow-up monitoring added.",
+            "confidence": 0.3462,
             "metadata": {
-              "source": "experiments",
-              "title": "EXP-010",
-              "metric": "revenue",
+              "title": "INC-009",
               "feature_area": "Checkout",
-              "experiment_id": "EXP-010"
-            }
-          },
-          {
-            "source": "release_notes",
-            "title": "Checkout improvement wave 10",
-            "summary": "bugfix in Checkout: Improved checkout experience for Harbor traffic to reduce friction and improve revenue.. Expected metric: revenue",
-            "confidence": 0.4181,
-            "metadata": {
-              "release_id": "REL-010",
-              "source": "release_notes",
-              "feature_area": "Checkout",
-              "title": "Checkout improvement wave 10",
-              "date": "2024-09-20"
-            }
-          },
-          {
-            "source": "release_notes",
-            "title": "Checkout improvement wave 22",
-            "summary": "experiment in Checkout: Improved checkout experience for Willow traffic to reduce friction and improve cart_rate.. Expected metric: cart_rate",
-            "confidence": 0.3809,
-            "metadata": {
-              "date": "2025-08-01",
-              "source": "release_notes",
-              "release_id": "REL-022",
-              "feature_area": "Checkout",
-              "title": "Checkout improvement wave 22"
+              "date": "2025-01-19",
+              "severity": "SEV3",
+              "source": "engineering_incidents"
             }
           },
           {
             "source": "experiments",
             "title": "EXP-022",
-            "summary": "Experiment on Checkout for cart_rate: lift -3.2%, p-value 0.015, decision iterate",
-            "confidence": 0.3766,
+            "summary": "Experiment on Checkout for cart_rate: lift None%, p-value None, decision None",
+            "confidence": 0.3333,
             "metadata": {
               "source": "experiments",
+              "feature_area": "Checkout",
               "title": "EXP-022",
               "experiment_id": "EXP-022",
-              "metric": "cart_rate",
-              "feature_area": "Checkout"
+              "metric": "cart_rate"
+            }
+          },
+          {
+            "source": "experiments",
+            "title": "EXP-010",
+            "summary": "Experiment on Checkout for revenue: lift None%, p-value None, decision None",
+            "confidence": 0.3333,
+            "metadata": {
+              "feature_area": "Checkout",
+              "title": "EXP-010",
+              "experiment_id": "EXP-010",
+              "metric": "revenue",
+              "source": "experiments"
+            }
+          },
+          {
+            "source": "release_notes",
+            "title": "Checkout improvement wave 22",
+            "summary": "feature in Checkout: Improved checkout experience for Willow traffic to reduce friction and improve cart_rate.. Expected metric: cart_rate",
+            "confidence": 0.3217,
+            "metadata": {
+              "source": "release_notes",
+              "feature_area": "Checkout",
+              "release_id": "REL-022",
+              "date": "2025-08-01",
+              "title": "Checkout improvement wave 22"
+            }
+          },
+          {
+            "source": "release_notes",
+            "title": "Checkout improvement wave 10",
+            "summary": "performance in Checkout: Improved checkout experience for Harbor traffic to reduce friction and improve revenue.. Expected metric: revenue",
+            "confidence": 0.3109,
+            "metadata": {
+              "feature_area": "Checkout",
+              "release_id": "REL-010",
+              "date": "2024-09-20",
+              "title": "Checkout improvement wave 10",
+              "source": "release_notes"
             }
           }
         ],
@@ -223,22 +243,52 @@
     ],
     "risks": [
       "Cancellation rate is above the configured decision guardrail."
+    ],
+    "attribution": [
+      {
+        "agent": "metrics_agent",
+        "label": "Revenue & KPIs",
+        "weight": 42.7,
+        "direction": "risk",
+        "confidence": 0.86
+      },
+      {
+        "agent": "experiment_agent",
+        "label": "Experiments",
+        "weight": 20.8,
+        "direction": "opportunity",
+        "confidence": 0.82
+      },
+      {
+        "agent": "release_incident_agent",
+        "label": "Release & Incidents",
+        "weight": 18.6,
+        "direction": "risk",
+        "confidence": 0.79
+      },
+      {
+        "agent": "customer_voice_agent",
+        "label": "Customer Reviews",
+        "weight": 17.9,
+        "direction": "risk",
+        "confidence": 0.76
+      }
     ]
   },
   "evaluation": {
     "agent_count": 4,
-    "evidence_item_count": 13,
+    "evidence_item_count": 14,
     "evidence_coverage": 1.0,
-    "avg_evidence_confidence": 0.5659,
+    "avg_evidence_confidence": 0.5079,
     "risk_coverage": 1.0,
     "actionability": 1.0,
     "recommendation_confidence": 0.92
   },
   "llm": {
-    "text": "**Executive Decision Memo**\n\n**Decision:** The product team should investigate purchase conversion and rollout risk before expanding the latest ecommerce experience.\n\n**Rationale:** Multiple evidence streams indicate risk associated with the rollout, including a high cancellation rate and negative customer themes. The safest decision is to investigate before expanding rollout, as supported by the metrics agent, experiment agent, and customer voice agent findings.\n\n**Evidence:**\n\n* Metrics agent finding: \"Cancellation rate is high enough to require investigation before broad rollout.\" (Source: KPI Summary, Confidence: 1.0)\n* Experiment agent finding: \"At least one experiment shows statistically useful upside for a controlled rollout.\" (Source: EXP-010, Confidence: 0.9984)\n* Customer voice agent finding: \"Customer reviews highlight a negative theme in Clothing / Harbor: color / quality / poor.\" (Source: Customer reviews, Confidence: 0.4915)\n\n**Risks:**\n\n* Cancellation rate is above the configured decision guardrail.\n* Release or incident risk associated with REL-010.\n\n**Next Actions:**\n\n1. Validate the highest-impact SQL metrics against the warehouse.\n2. Inspect release, incident, and feature-flag timelines for the affected feature area.\n3. Review negative customer themes before expanding rollout.\n\n**Recommendation Confidence:** 0.92\n\n**Recommendation Evidence:** The recommendation is based on the findings from multiple evidence streams, including metrics agent, experiment agent, and customer voice agent. The confidence in the recommendation is 0.92, indicating a high level of confidence in the decision.\n\n**Approval:** This decision memo has been approved by [Decision Maker's Name] on [Date].",
+    "text": "LLM fallback memo: remote Hugging Face generation was not executed (huggingface_error:HfHubHTTPError). The deterministic decision workflow should be used as the source of truth. Configure HF_TOKEN and HF_LLM_MODEL to enable open-source LLM generation.",
     "model": "meta-llama/Llama-3.1-8B-Instruct",
     "provider": "huggingface",
-    "used_remote_llm": true
+    "used_remote_llm": false
   },
   "used_langgraph": true,
   "vector_db": {

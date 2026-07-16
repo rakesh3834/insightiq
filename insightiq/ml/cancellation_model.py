@@ -311,7 +311,9 @@ def train_cancellation_model(frames: dict[str, pd.DataFrame], force: bool = Fals
     business_case = _build_business_case(df, cm, recommended_threshold, int(len(X_test)))
 
     report = {
-        "target": "order cancellation (realistic risk label)",
+        "model_name": "Business Health — Revenue-at-Risk Model",
+        "target_short": "Revenue-at-Risk",
+        "target": "revenue-at-risk: order cancellation as a churn / lost-revenue signal",
         "n_samples": int(len(df)),
         "n_train": int(len(X_train)),
         "n_test": int(len(X_test)),

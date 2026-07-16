@@ -44,4 +44,7 @@ class DecisionRecommendation:
     findings: list[AgentFinding]
     next_actions: list[str]
     risks: list[str]
+    # Per-evidence-stream contribution to the decision, normalized to sum to 100.
+    # Powers the explainable "Decision Confidence" breakdown in the UI.
+    attribution: list[dict[str, Any]] = field(default_factory=list)
 

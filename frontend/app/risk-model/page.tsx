@@ -271,8 +271,8 @@ export default function RiskModelPage() {
     <Shell>
       <div className="space-y-8 max-w-6xl">
         <div>
-          <h1 className="text-lg font-bold text-zinc-100 flex items-center gap-2"><Brain className="w-5 h-5 text-indigo-400" /> Cancellation Risk Model</h1>
-          <p className="text-sm text-zinc-500 mt-0.5">Supervised ML — trained, evaluated, and served from a persisted model. Predicts which orders are likely to cancel.</p>
+          <h1 className="text-lg font-bold text-zinc-100 flex items-center gap-2"><Brain className="w-5 h-5 text-indigo-400" /> Business Health · Revenue-at-Risk Model</h1>
+          <p className="text-sm text-zinc-500 mt-0.5">Supervised ML — trained, evaluated, and served from a persisted model. Flags orders at risk of cancellation (a churn / lost-revenue signal) so teams can intervene before revenue leaks.</p>
         </div>
 
         {isLoading || !m ? <Skeleton className="h-40 w-full rounded-xl" /> : (
